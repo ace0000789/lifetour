@@ -26,6 +26,25 @@
 
 .hero-header__logo-link {
   user-select: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+  padding: 9px;
+  padding-left: 32px;
+  padding-right: 31px;
+
+  @include vp-1439 {
+    width: 144px;
+    height: 44px;
+    padding: 0;
+  }
+}
+
+.hero-header__logo-link svg {
+  display: block;
+  fill: $color-default-white;
+  width: 142px;
+  height: 44px;
 
   @include vp-1439 {
     width: 144px;
@@ -169,7 +188,21 @@
   }
 }
 
+/* .hero-header.is--opened */
+.hero-header.is--opened  {
+  background-color: $color-default-white;
+}
 
+.hero-header.is--opened .hero-header__logo-link svg {
+  fill: $color-default-black;
+}
+
+.hero-header.is--opened .hero-header__phone {
+  color: $color-default-black;
+}
+.hero-header.is--opened .hero-header__toggle{
+  background-color: $color-default-white;
+}
 
 
 /**/
