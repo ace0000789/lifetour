@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 20px;
 
   color: $color-default-white;
 
@@ -9,10 +9,6 @@
   cursor: pointer;
 
   transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
 
   &:disabled {
     opacity: 0.5;
