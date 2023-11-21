@@ -129,12 +129,47 @@
     width: 26px;
     background-color: $color-navy-blue;
     position: relative;
-
   }
 }
 
 .hero-header__toggle svg {
   fill: $color-default-white;
 }
+
+.hero-header.is--opened .hero-header__toggle {
+
+  svg {
+    fill: $color-default-black;
+  }
+
+  @include vp-781 {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      right: 0;
+      width: 30px;
+      height: 2px;
+      background-color: $color-default-black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    svg {
+      display: none;
+    }
+  }
+}
+
+
+
 
 /**/
