@@ -76,10 +76,6 @@ textarea {
   }
 }
 
-select {
-  border-radius: 0;
-}
-
 // ie11 X removal
 input {
   &::-ms-clear,
@@ -109,7 +105,6 @@ input[type="number"] {
 }
 
 // ios button \ inputs reset
-select,
 textarea,
 input:matches([type="email"],
   [type="number"],
