@@ -98,17 +98,22 @@
 
 .hero-header__toggle {
   display: none;
+  padding: 0;
+  margin: 0;
 
   @include vp-1439 {
     display: block;
     border: none;
     height: 44px;
     width: 26px;
-    background-color: red;
+    background-color: $color-navy-blue;
+    position: relative;
+
   }
 }
 
-.hero-header--closed 
-
+.hero-header__toggle svg {
+  fill: $color-default-white;
+}
 
 /**/
