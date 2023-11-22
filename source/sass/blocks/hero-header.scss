@@ -125,10 +125,6 @@
     color: $color-resolution-blue;
     outline: none;
   }
-
-  &--disabled {
-    color: $color-default-white;
-  }
 }
 
 .hero-header .hero-header__phone:active {
@@ -215,9 +211,28 @@
   fill: $color-default-black;
 }
 
-.hero-header.is-opened .hero-header__phone {
+.is-opened .hero-header__phone {
   color: $color-default-black;
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+  }
 }
+
+.hero-header.is-opened .hero-header__phone:active {
+  color: $color-navy-blue;
+}
+
+.hero-header.is-opened .hero-header__phone--disabled {
+  color: $color-navy-blue;
+  pointer-events: none;
+
+  @include hover-focus {
+    color: $color-navy-blue;
+    pointer-events: none;
+  }
+}
+
 .hero-header.is-opened .hero-header__toggle{
   background-color: $color-default-white;
 }
@@ -302,8 +317,3 @@
     color: $color-default-white;
   }
 }
-
-main {
-  background-color: aquamarine;
-}
-/**/
