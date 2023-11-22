@@ -3,12 +3,7 @@ import Swiper from './vendor/swiper';
 
 function initPromoSwiper() {
   const myImageSlider = new Swiper('[data-validate="swiper-container"]', {
-  // Стрелки
-    navigation: {
-      nextEl: '[data-validate="button-next"]',
-      prevEl: '[data-validate="button-prev"]',
-    },
-
+ 
     // перетаскивание на ПК
     simulateTouch: true,
     // чувствительность свайпа
