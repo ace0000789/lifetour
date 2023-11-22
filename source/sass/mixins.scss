@@ -44,8 +44,8 @@
   }
 }
 
-@mixin vp-781 {
-  @media (max-width: ($vp-782 - 1px)) {
+@mixin vp-767 {
+  @media (max-width: ($vp-768 - 1px)) {
     @content;
   }
 }
