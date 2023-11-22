@@ -12,6 +12,7 @@
     grid-template-columns: 230px auto 230px;
     position: relative;
     padding: 20px 45px;
+    z-index: 2;
   }
 
   @include vp-781 {
@@ -83,6 +84,18 @@
   line-height: 16px;
   color: $color-default-white;
   user-select: none;
+
+  @include vp-1439 {
+    color: $color-default-black;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+  }
+
+  @include vp-781 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
 }
 
 .hero-header__phone {
@@ -191,6 +204,11 @@
 /* .hero-header.is--opened */
 .hero-header.is--opened  {
   background-color: $color-default-white;
+  padding-bottom: 50px;
+
+  @include vp-781 {
+    padding-bottom: 30px;
+  }
 }
 
 .hero-header.is--opened .hero-header__logo-link svg {
@@ -204,5 +222,39 @@
   background-color: $color-default-white;
 }
 
+.hero-header.is--opened .hero-header__list {
+  background-color: $color-default-white;
+  padding-left: 45px;
+  padding-bottom: 70px;
+  position: absolute;
+  width: 100%;
+  display: block;
+  top: 114px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  flex-wrap: wrap;
 
+  @include vp-781 {
+    padding-left: 15px;
+    gap: 22px;
+    padding-bottom: 50px;
+    top: 99px;
+  }
+}
+
+.is--bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(45, 56, 63, 0.60);
+  z-index: 1;
+}
+main {
+
+  background-color: aquamarine;
+}
 /**/
