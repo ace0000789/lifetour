@@ -6,6 +6,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 20px;
+  position: absolute;
+  width: 1200px;
 
   @include vp-1439 {
     display: grid;
@@ -13,6 +15,7 @@
     position: relative;
     padding: 20px 45px;
     z-index: 2;
+    width: 100%;
   }
 
   @include vp-781 {
@@ -200,11 +203,6 @@
 /* .hero-header.is-opened */
 .hero-header.is-opened  {
   background-color: $color-default-white;
-  padding-bottom: 50px;
-
-  @include vp-781 {
-    padding-bottom: 30px;
-  }
 }
 
 .hero-header.is-opened .hero-header__logo-link svg {
@@ -244,17 +242,19 @@
   position: absolute;
   width: 100%;
   display: block;
-  top: 114px;
+  top: 100%;
   display: flex;
   flex-direction: column;
   gap: 26px;
   flex-wrap: wrap;
+  padding-top: 50px;
 
   @include vp-781 {
     padding-left: 15px;
     gap: 22px;
     padding-bottom: 50px;
-    top: 99px;
+    top: 100%;
+    padding-top: 30px;
   }
 }
 
