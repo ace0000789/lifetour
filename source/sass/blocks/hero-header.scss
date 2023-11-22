@@ -168,7 +168,7 @@
   fill: $color-default-white;
 }
 
-.hero-header.is--opened .hero-header__toggle {
+.hero-header.is-opened .hero-header__toggle {
 
   svg {
     fill: $color-default-black;
@@ -201,8 +201,8 @@
   }
 }
 
-/* .hero-header.is--opened */
-.hero-header.is--opened  {
+/* .hero-header.is-opened */
+.hero-header.is-opened  {
   background-color: $color-default-white;
   padding-bottom: 50px;
 
@@ -211,18 +211,18 @@
   }
 }
 
-.hero-header.is--opened .hero-header__logo-link svg {
+.hero-header.is-opened .hero-header__logo-link svg {
   fill: $color-default-black;
 }
 
-.hero-header.is--opened .hero-header__phone {
+.hero-header.is-opened .hero-header__phone {
   color: $color-default-black;
 }
-.hero-header.is--opened .hero-header__toggle{
+.hero-header.is-opened .hero-header__toggle{
   background-color: $color-default-white;
 }
 
-.hero-header.is--opened .hero-header__list {
+.hero-header.is-opened .hero-header__list {
   background-color: $color-default-white;
   padding-left: 45px;
   padding-bottom: 70px;
@@ -243,7 +243,7 @@
   }
 }
 
-.is--bg::after {
+.is-bg::after {
   content: "";
   position: absolute;
   top: 0;
@@ -253,8 +253,57 @@
   background-color: rgba(45, 56, 63, 0.60);
   z-index: 1;
 }
-main {
 
+/* No JS*/
+
+.hero-header.is-nojs .hero-header__toggle {
+  display: none;
+}
+
+.hero-header.is-nojs {
+  @include vp-1439 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+}
+
+.hero-header.is-nojs .hero-header__list {
+  @include vp-1439 {
+    position: static;
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    background-color: $color-navy-blue;
+    padding-bottom: 50px;
+    width: 100%;
+    top: 114px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    flex-wrap: wrap;
+  }
+
+  @include vp-781 {
+    padding-top: 20px;
+    gap: 22px;
+    padding-bottom: 30px;
+  }
+}
+
+.hero-header.is-nojs .hero-header__phone {
+  @include vp-1439 {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
+}
+
+.hero-header.is-nojs .hero-header__link {
+  @include vp-1439 {
+    color: $color-default-white;
+  }
+}
+
+main {
   background-color: aquamarine;
 }
 /**/

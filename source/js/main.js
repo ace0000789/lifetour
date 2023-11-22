@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {initHeaderToggle} from './menu';
+import {initMobileMunu} from './init-mobile-menu';
 
 // ---------------------------------
 
@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
-  initHeaderToggle();
+  initMobileMunu();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
