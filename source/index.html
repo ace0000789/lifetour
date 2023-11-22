@@ -21,13 +21,14 @@
 </head>
 
 <body>
-  <div class="wrapper" data-validate="wrapper" >
+  <div class="wrapper" data-validate="wrapper">
     <main>
       <h1 class="visually-hidden">Сайт Lifetour.</h1>
       <section class="hero">
+        <h2 class="visually-hidden">Топ туры.</h2>
         <div class="container container--hero">
-          <header class="hero-header is-closed is-nojs" data-validate="header" >
-            <button class="hero-header__toggle" type="button"  data-validate="toggle">
+          <header class="hero-header is-closed is-nojs" data-validate="header">
+            <button class="hero-header__toggle" type="button" data-validate="toggle">
               <svg width="26" height="26" role="img" aria-label="Меню.">
                 <use href="img/sprite.svg#menu"></use>
               </svg>
@@ -64,6 +65,51 @@
             </a>
           </header>
         </div>
+
+
+            <div class="swiper-slide">
+              <div class="about-us__image">
+                <span class="visually-hidden">Изображение гор Кавказа.</span>
+                <picture>
+                  <source type="image/webp" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.webp 1x,
+                    img/hero/bg-hero/mobile/mobile-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.jpg 1x,
+                  img/hero/bg-hero/mobile/mobile-mount@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 1439px)" srcset="img/hero/bg-hero/tablet/tablet-mount.webp 1x,
+                  img/hero/bg-hero/tablet/tablet-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 1439px)"
+                    srcset="img/hero/bg-hero/tablet/tablet-mount.jpg 1x, img/hero/bg-hero/tablet/tablet-mount@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/hero/bg-hero/desktop/desktop-caucasus.webp 1x,
+                  img/hero/bg-hero/desktop/desktop-caucasus@2x.webp 2x">
+                  <img src="img/hero/bg-hero/desktop/desktop-caucasus.jpg" width="1440" height="800"
+                    srcset="img/hero/bg-hero/desktop/desktop-caucasus@2x.jpg 2x" alt="Изображение гор Кавказа.">
+                </picture>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="">
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="">
+
+              </div>
+            </div>
+
+          </div>
+          <!-- Стрелки -->
+          <div class="swiper-button-prev" data-validate="button-prev"></div>
+          <div class="swiper-button-next" data-validate="button-next"></div>
+          <!-- Пагинация -->
+          <div class="swiper-pagination"></div>
+          <!-- Скроллбар (если надо) -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+
+
       </section>
 
     </main>
