@@ -67,8 +67,94 @@
         </div>
 
 
-            <div class="swiper-slide">
-              <div class="about-us__image">
+        <!--Главный контейнер-->
+        <div class="hero-slider swiper-container" data-validate="swiper-container">
+          <!--Обязательная обложка-->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" tabindex="0">
+              <div class="review__info">
+                <picture>
+                  <source type="image/webp" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.webp 1x,
+                    img/hero/bg-hero/mobile/mobile-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.jpg 1x,
+                  img/hero/bg-hero/mobile/mobile-mount@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 1439px)" srcset="img/hero/bg-hero/tablet/tablet-mount.webp 1x,
+                  img/hero/bg-hero/tablet/tablet-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 1439px)"
+                    srcset="img/hero/bg-hero/tablet/tablet-mount.jpg 1x, img/hero/bg-hero/tablet/tablet-mount@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/hero/bg-hero/desktop/desktop-caucasus.webp 1x,
+                  img/hero/bg-hero/desktop/desktop-caucasus@2x.webp 2x">
+                  <img src="img/hero/bg-hero/desktop/desktop-caucasus.jpg" width="1440" height="800"
+                    srcset="img/hero/bg-hero/desktop/desktop-caucasus@2x.jpg 2x" alt="Изображение гор Кавказа.">
+                </picture>
+
+              </div>
+            </div>
+            <div class="swiper-slide" tabindex="0">
+              <div class="review__info">
+                <picture>
+                  <source type="image/webp" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.webp 1x,
+                    img/hero/bg-hero/mobile/mobile-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.jpg 1x,
+                  img/hero/bg-hero/mobile/mobile-mount@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 1439px)" srcset="img/hero/bg-hero/tablet/tablet-mount.webp 1x,
+                  img/hero/bg-hero/tablet/tablet-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 1439px)"
+                    srcset="img/hero/bg-hero/tablet/tablet-mount.jpg 1x, img/hero/bg-hero/tablet/tablet-mount@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/hero/bg-hero/desktop/desktop-kamchatka.webp 1x,
+                  img/hero/bg-hero/desktop/desktop-kamchatka@2x.webp 2x">
+                  <img src="img/hero/bg-hero/desktop/desktop-kamchatka.jpg" width="1440" height="800"
+                    srcset="img/hero/bg-hero/desktop/desktop-kamchatka@2x.jpg 2x" alt="Изображение гор Камчатки.">
+                </picture>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide" tabindex="0">
+              <div class="review__info">
+                <picture>
+                  <source type="image/webp" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.webp 1x,
+                    img/hero/bg-hero/mobile/mobile-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.jpg 1x,
+                  img/hero/bg-hero/mobile/mobile-mount@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 1439px)" srcset="img/hero/bg-hero/tablet/tablet-mount.webp 1x,
+                  img/hero/bg-hero/tablet/tablet-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 1439px)"
+                    srcset="img/hero/bg-hero/tablet/tablet-mount.jpg 1x, img/hero/bg-hero/tablet/tablet-mount@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/hero/bg-hero/desktop/desktop-altai.webp 1x,
+                  img/hero/bg-hero/desktop/desktop-altai@2x.webp 2x">
+                  <img src="img/hero/bg-hero/desktop/desktop-altai.jpg" width="1440" height="800"
+                    srcset="img/hero/bg-hero/desktop/desktop-altai@2x.jpg 2x" alt="Изображение гор Камчатки.">
+                </picture>
+
+              </div>
+            </div>
+          </div>
+          <!-- Пагинация -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
+
+
+<!--
+
+  <div class="hero-slider__slide swiper-slide">
+              <div class="swiper-slide__bg">
                 <span class="visually-hidden">Изображение гор Кавказа.</span>
                 <picture>
                   <source type="image/webp" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.webp 1x,
@@ -87,38 +173,44 @@
               </div>
             </div>
 
-            <div class="swiper-slide">
-              <div class="">
-
+            <div class="hero-slider__slide swiper-slide">
+              <div class="swiper-slide__bg">
+                <span class="visually-hidden">Изображение гор Камчатки.</span>
+                <picture>
+                  <source type="image/webp" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.webp 1x,
+                    img/hero/bg-hero/mobile/mobile-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.jpg 1x,
+                  img/hero/bg-hero/mobile/mobile-mount@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 1439px)" srcset="img/hero/bg-hero/tablet/tablet-mount.webp 1x,
+                  img/hero/bg-hero/tablet/tablet-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 1439px)"
+                    srcset="img/hero/bg-hero/tablet/tablet-mount.jpg 1x, img/hero/bg-hero/tablet/tablet-mount@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/hero/bg-hero/desktop/desktop-kamchatka.webp 1x,
+                  img/hero/bg-hero/desktop/desktop-kamchatka@2x.webp 2x">
+                  <img src="img/hero/bg-hero/desktop/desktop-kamchatka.jpg" width="1440" height="800"
+                    srcset="img/hero/bg-hero/desktop/desktop-kamchatka@2x.jpg 2x" alt="Изображение гор Камчатки.">
+                </picture>
               </div>
             </div>
 
-            <div class="swiper-slide">
-              <div class="">
-
+            <div class="hero-slider__slide swiper-slide">
+              <div class="swiper-slide__bg">
+                <span class="visually-hidden">Изображение гор Алтая.</span>
+                <picture>
+                  <source type="image/webp" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.webp 1x,
+                    img/hero/bg-hero/mobile/mobile-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 781px)" srcset="img/hero/bg-hero/mobile/mobile-mount.jpg 1x,
+                  img/hero/bg-hero/mobile/mobile-mount@2x.jpg 2x">
+                  <source type="image/webp" media="(max-width: 1439px)" srcset="img/hero/bg-hero/tablet/tablet-mount.webp 1x,
+                  img/hero/bg-hero/tablet/tablet-mount@2x.webp 2x">
+                  <source type="image/jpeg" media="(max-width: 1439px)"
+                    srcset="img/hero/bg-hero/tablet/tablet-mount.jpg 1x, img/hero/bg-hero/tablet/tablet-mount@2x.jpg 2x">
+                  <source type="image/webp" srcset="img/hero/bg-hero/desktop/desktop-altai.webp 1x,
+                  img/hero/bg-hero/desktop/desktop-altai@2x.webp 2x">
+                  <img src="img/hero/bg-hero/desktop/desktop-altai.jpg" width="1440" height="800"
+                    srcset="img/hero/bg-hero/desktop/desktop-altai@2x.jpg 2x" alt="Изображение гор Алтая.">
+                </picture>
               </div>
             </div>
 
-          </div>
-          <!-- Пагинация -->
-          <div class="swiper-pagination"></div>
-          <!-- Скроллбар (если надо) -->
-          <div class="swiper-scrollbar"></div>
-        </div>
-
-
-      </section>
-
-    </main>
-    <footer class="footer">
-      <div class="container">
-
-      </div>
-    </footer>
-  </div>
-
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
-</body>
-
-</html>
+-->

@@ -6,8 +6,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 20px;
-  position: absolute;
   width: 1200px;
+  z-index: 2;
+  position: absolute;
 
   @include vp-1439 {
     display: grid;
