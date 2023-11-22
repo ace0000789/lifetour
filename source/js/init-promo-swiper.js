@@ -51,7 +51,7 @@ function initPromoSwiper() {
         centeredSlides: false,
         allowTouchMove: true,
       },
-      782: {
+      768: {
         slidesPerView: 1,
       },
 
