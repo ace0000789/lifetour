@@ -101,6 +101,8 @@
   left: 50%;
   transform: translateX(-50%);
   width: 1200px;
+  overflow: auto;
+  max-height: 600px;
 }
 
 .hero-slider__title {
@@ -113,6 +115,7 @@
   margin-bottom: 25px;
   z-index: 1;
   position: relative;
+  word-break: break-word;
 }
 
 .hero-slider__text {
@@ -160,6 +163,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .hero-slider__info {
@@ -210,6 +214,7 @@
   border: 1px solid $color-default-white;
   background-color: transparent;
   border-radius: 50%;
+  cursor: pointer;
 
   @include hover-focus {
     border: 1px solid $color-resolution-blue;
