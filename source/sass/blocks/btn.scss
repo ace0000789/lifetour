@@ -13,9 +13,16 @@
   &:disabled {
     background-color: $color-nobel;
     pointer-events: none;
+    color: $color-default-white;
+    border: none;
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
+    color: $color-resolution-blue;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    outline: none;
   }
 }
