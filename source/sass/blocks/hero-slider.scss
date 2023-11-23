@@ -171,3 +171,43 @@
   flex-wrap: wrap;
   gap: 8px;
 }
+
+.hero-slider__media {
+  position: absolute;
+  top: 139px;
+  right: 0;
+}
+
+/* видео */
+.hero-slider__video-container {
+  width: 482px;
+  height: 317px;
+}
+
+.hero-slider__video-container img {
+  height: 317px;
+  object-fit: cover;
+}
+
+/* кнопка */
+.hero-slider__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border: 1px solid $color-default-white;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.hero-slider__video-button::after {
+  position: absolute;
+  content: "";
+  border: 11px solid transparent;
+  border-left: 11px solid $color-default-white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-15%, -50%);
+}

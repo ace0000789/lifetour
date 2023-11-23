@@ -101,7 +101,26 @@
                     </svg>
                     <span class="hero-slider__difficult">Высокая сложность</span>
                   </div>
-                  
+                  <div class="hero-slider__media">
+                    <div class="hero-slider__video-container">
+                      <div class="hero-slider__video" data-validate="container-video">
+                        <picture>
+                          <source type="image/webp" media="(max-width: 1440px)" srcset="img/hero/bg-video/bg-video-tablet.webp 1x,
+                            img/hero/bg-video/bg-video-tablet@2x.webp 2x">
+                          <source type="image/jpeg" media="(max-width: 1440px)"
+                            srcset="img/hero/bg-video/bg-video-tablet.jpg 1x, vbg-video/bg-video-tablet@2x.jpg 2x">
+                          <source type="image/webp" srcset="img/hero/bg-video/bg-video-desktop.webp 1x,
+                            img/hero/bg-video/bg-video-desktop@2x.webp 2x">
+                          <img src="img/hero/bg-video/bg-video-desktop.jpg" width="482" height="317"
+                            srcset="img/hero/bg-video/bg-video-desktop@2x.jpg 2x" alt="Изображение туриста в горах.">
+                        </picture>
+                        <button class="hero-slider__video-button" type="button" aria-label="Смотреть видео"
+                          data-validate="play-video">
+                          <span class="visually-hidden">Кнопка смотреть видео.</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
