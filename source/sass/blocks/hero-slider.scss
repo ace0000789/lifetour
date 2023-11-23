@@ -185,6 +185,18 @@
   height: 317px;
   width: 482px;
   background-color: $color-default-black;
+
+  &--polaroid {
+    background-color: transparent;
+    width: 410px;
+    height: 459px;
+    top: 0px;
+
+    img {
+      object-fit: contain;
+      height: 459px;
+    }
+  }
 }
 
 /* видео */
