@@ -60,6 +60,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 7px;
+  z-index: 1;
 
   @include vp-1439 {
     left: 50%;
@@ -105,9 +106,10 @@
   max-height: 600px;
 
   @include vp-1439 {
+    top: 214px;
     width: 100%;
     text-align: center;
-    max-height: 720px;
+    max-height: 750px;
   }
 }
 
@@ -143,9 +145,7 @@
 
   @include vp-1439 {
     margin-bottom: 25px;
-    width: 100%;
-    padding: 0 45px;
-    max-width: 65%;
+    width: 462px;
     margin: 0 auto;
     margin-bottom: 25px;
   }
@@ -166,7 +166,7 @@
   background-color: $color-resolution-blue;
   border:  1px solid $color-resolution-blue;
   color: $color-default-white;
-  padding: 19px 33px;
+  padding: 19px 32.5px;
 }
 
 /* for disabled add class  hero-slider__link--disabled */
@@ -236,6 +236,15 @@
     img {
       object-fit: contain;
       height: 459px;
+    }
+
+    @include vp-1439 {
+      height: 361px;
+
+      img {
+        object-fit: contain;
+        height: 361px;
+      }
     }
   }
 
