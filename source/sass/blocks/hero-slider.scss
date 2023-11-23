@@ -206,24 +206,67 @@
     outline: none;
 
     &::after {
+      border: 7px solid transparent;
+      border-left: 7px solid $color-default-white;
+      transform: translate(-13%, -50%);
     }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    border: 11px solid transparent;
+    border-left: 11px solid $color-default-black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -50%);
   }
 
   &::after {
     position: absolute;
     content: "";
-    /*border: 11px solid transparent;
+    border: 11px solid transparent;
     border-left: 11px solid $color-default-white;
     top: 50%;
     left: 50%;
-    transform: translate(-15%, -50%);*/
-
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid blue; /* Измените цвет треугольника здесь */
-    border: 5px solid red; /* Измените цвет обводки здесь */
-
+    transform: translate(-15%, -50%);
   }
 }
+
+
+.hero-slider__video .hero-slider__video-button:active {
+  background-color: $color-resolution-blue;
+  border: none;
+}
+
+.hero-slider__video .hero-slider__video-button:active.hero-slider__video-button::after {
+  border: 11px solid transparent;
+  border-left: 11px solid $color-default-white;
+  transform: translate(-15%, -50%);
+}
+
+/* Disabled button video */
+
+.hero-slider .hero-slider__video-button:disabled {
+  border: 1px solid $color-navy-blue;
+
+  @include hover-focus {
+    border: 1px solid $color-navy-blue;
+
+    &::after {
+      border: 11px solid transparent;
+      border-left: 11px solid $color-navy-blue;
+      transform: translate(-15%, -50%);
+    }
+  }
+
+  &::after {
+    border-left: 11px solid $color-navy-blue;
+  }
+}
+
+.hero-slider__video .hero-slider__video-button:disabled:active {
+  background-color: transparent;
+}
+
+/**/
