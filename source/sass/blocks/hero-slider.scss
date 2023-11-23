@@ -38,7 +38,24 @@
   user-select: none;
   overflow: auto;
   outline: none;
+  min-height: 800px;
+  position: relative;
+
+  @include vp-1439 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+
+    min-height: 1024px;
+
+    @include vp-767 {
+      gap: 4px;
+      min-height: 568px;
+    }
+  }
 }
+
+/* Пагинация */
 
 .hero-slider .swiper-pagination {
   left: 87.2%;
@@ -81,3 +98,13 @@
   background-color: $color-default-white;
 }
 
+/* Slider text */
+
+.hero-slider__wrapper {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+
+}
