@@ -111,6 +111,8 @@
   font-weight: 800;
   line-height: 77px;
   margin-bottom: 25px;
+  z-index: 1;
+  position: relative;
 }
 
 .hero-slider__text {
@@ -176,6 +178,9 @@
   position: absolute;
   top: 139px;
   right: 0;
+  height: 317px;
+  width: 482px;
+  background-color: $color-default-black;
 }
 
 /* видео */
