@@ -129,10 +129,9 @@
     font-size: 56px;
     line-height: 56px;
     margin-bottom: 15px;
-    width: 100%;
-    padding: 0 45px;
     margin: 0 auto;
     margin-bottom: 15px;
+    width: 670px;
   }
 }
 
@@ -239,11 +238,13 @@
     }
 
     @include vp-1439 {
-      height: 361px;
+      height: 365px;
+      width:  530px;
 
       img {
         object-fit: contain;
-        height: 361px;
+        height: 365px;
+        width: 530px;
       }
     }
   }
