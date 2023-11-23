@@ -41,7 +41,43 @@
 }
 
 .hero-slider .swiper-pagination {
-  position: absolute;
-  left: 85%;
+  left: 87.2%;
   width: fit-content;
+  bottom: 97px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  @include vp-1439 {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+
+    @include vp-767 {
+      gap: 4px;
+    }
+  }
 }
+
+.hero-slider .swiper-pagination-bullet {
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  font-size: 14px;
+  border: 1px solid $color-default-white;
+  opacity: 1;
+  background-color: transparent;
+
+  @include vp-767 {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.hero-slider .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
+}
+

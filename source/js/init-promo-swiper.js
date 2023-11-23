@@ -8,8 +8,6 @@ function initPromoSwiper() {
     // Пагинация
     pagination: {
       el: '.swiper-pagination',
-
-      // Булеты
       clickable: true,
     },
 
