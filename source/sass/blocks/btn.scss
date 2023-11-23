@@ -1,11 +1,11 @@
 .btn {
   display: inline-flex;
   padding: 20px;
+  border: 1px solid $color-resolution-blue;
 
   color: $color-default-white;
 
   background-color: $color-navy-blue;
-  border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
@@ -21,8 +21,8 @@
     background-color: $color-default-white;
     border: 1px solid $color-resolution-blue;
     color: $color-resolution-blue;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     outline: none;
   }
 }

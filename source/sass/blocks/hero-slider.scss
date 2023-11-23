@@ -155,9 +155,8 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
-  padding: 20px 33px;
+  padding: 21px 34px;
   margin-bottom: 134px;
-  max-width: 180px;
 
   @include vp-1439 {
     margin-bottom: 45px;
@@ -168,8 +167,8 @@
   background-color: $color-resolution-blue;
   border: none;
   color: $color-default-white;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 /* for disabled add class  hero-slider__link--disabled */
