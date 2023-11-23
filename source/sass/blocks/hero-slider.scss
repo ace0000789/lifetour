@@ -182,6 +182,7 @@
 .hero-slider__video-container {
   width: 482px;
   height: 317px;
+  background-color: $color-default-black;
 }
 
 .hero-slider__video-container img {
@@ -268,5 +269,26 @@
 .hero-slider__video .hero-slider__video-button:disabled:active {
   background-color: transparent;
 }
+
+.about-us__video iframe {
+  width: 100%;
+  height: 100%;
+  background-color: $color-default-black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.hero-slider__wrapper {
+  z-index: 5;
+}
+
+.hero-slider__media {
+  z-index: 4;
+}
+
 
 /**/
