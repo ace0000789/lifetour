@@ -200,14 +200,30 @@
   border: 1px solid $color-default-white;
   background-color: transparent;
   border-radius: 50%;
-}
 
-.hero-slider__video-button::after {
-  position: absolute;
-  content: "";
-  border: 11px solid transparent;
-  border-left: 11px solid $color-default-white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-15%, -50%);
+  @include hover-focus {
+    border: 1px solid $color-resolution-blue;
+    outline: none;
+
+    &::after {
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    /*border: 11px solid transparent;
+    border-left: 11px solid $color-default-white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-15%, -50%);*/
+
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue; /* Измените цвет треугольника здесь */
+    border: 5px solid red; /* Измените цвет обводки здесь */
+
+  }
 }
