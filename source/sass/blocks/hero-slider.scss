@@ -155,7 +155,6 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
-  padding: 21px 34px;
   margin-bottom: 134px;
 
   @include vp-1439 {
@@ -165,25 +164,26 @@
 
 .hero-slider__wrapper .hero-slider__link:active {
   background-color: $color-resolution-blue;
-  border: none;
+  border:  1px solid $color-resolution-blue;
   color: $color-default-white;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding: 19px 33px;
 }
 
 /* for disabled add class  hero-slider__link--disabled */
 
 .hero-slider__link--disabled {
   background-color: $color-nobel;
+  border:  1px solid $color-nobel;
   pointer-events: none;
   color: $color-default-white;
+  padding: 19px 33px;
 
   @include hover-focus {
+    border:  1px solid $color-nobel;
     background-color: $color-nobel;
     color: $color-default-white;
     border: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 19px 33px;
   }
 }
 

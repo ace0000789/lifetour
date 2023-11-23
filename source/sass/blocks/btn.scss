@@ -1,7 +1,7 @@
 .btn {
   display: inline-flex;
-  padding: 20px;
-  border: 1px solid $color-resolution-blue;
+  padding: 19px 33px;
+  border: 1px solid $color-navy-blue;
 
   color: $color-default-white;
 
@@ -21,8 +21,6 @@
     background-color: $color-default-white;
     border: 1px solid $color-resolution-blue;
     color: $color-resolution-blue;
-    padding-top: 20px;
-    padding-bottom: 20px;
     outline: none;
   }
 }
