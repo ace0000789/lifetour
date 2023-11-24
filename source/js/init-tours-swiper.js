@@ -1,7 +1,7 @@
 import Swiper from './vendor/swiper';
 
-function initPromoSwiper() {
-  const myImageSlider = new Swiper('[data-validate="swiper-hero"]', {
+function initToursSwiper() {
+  const myImageSlider = new Swiper('[data-validate="swiper-tours"]', {
 
 
     // Пагинация
@@ -57,4 +57,4 @@ function initPromoSwiper() {
   });
   return myImageSlider;
 }
-export {initPromoSwiper};
+export {initToursSwiper};
