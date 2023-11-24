@@ -46,7 +46,8 @@ function initToursSwiper() {
         spaceBetween: 30,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 2,
+        spaceBetween: 18,
       },
 
       0: {

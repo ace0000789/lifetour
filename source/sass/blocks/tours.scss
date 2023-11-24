@@ -101,6 +101,15 @@
   }
 }
 
+.tours-slider .swiper-slide {
+  height: 416px;
+}
+
+.tours-slider .swiper-slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 
 /**/
