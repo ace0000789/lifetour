@@ -3,12 +3,12 @@ export function initMobileMunu() {
   let headerToggle = document.querySelector('[data-validate="toggle"]');
   let wrapper = document.querySelector('[data-validate="wrapper"]');
 
-  header.classList.remove('is-nojs');
 
-  // проверка на наличие эдементов
   if (!header || !headerToggle || !wrapper) {
     return;
   }
+
+  header.classList.remove('is-nojs');
 
   headerToggle.addEventListener('click', toggleHeader);
 
