@@ -105,6 +105,7 @@
 .tours-slider .swiper-slide {
   height: 416px;
   background-color: $color-navy-blue;
+  position: relative;
 }
 
 .tours-slider .swiper-slide img {
@@ -113,7 +114,62 @@
   object-fit: cover;
 }
 
+.tours-slider__wrapper {
+  position: absolute;
+  width: 100%;
+  padding: 30px 20px;
+  bottom: 0;
+  z-index: 100;
+  color: $color-default-white;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex-wrap: wrap;
+}
 
+.tours-slider__subwrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.tour-slider__info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+
+  &--city {
+    gap: 4px;
+    background-color: $color-navy-blue;
+    padding: 8px 12px;
+  }
+}
+
+.tour-slider__text {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.tour-slider__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  max-width: 233px;
+  margin: 0;
+  padding: 0;
+}
+
+.tour-slider__line {
+  width: 80px;
+  border: 1px solid $color-default-white 0.2;
+  margin: 0;
+  padding: 0;
+}
 /**/
 
