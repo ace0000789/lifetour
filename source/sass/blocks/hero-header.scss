@@ -32,7 +32,6 @@
 .hero-header__logo-link {
   user-select: none;
   margin: 0;
-  padding: 0;
   vertical-align: bottom;
   padding: 9px;
   padding-left: 32px;
@@ -132,12 +131,12 @@
 }
 
 .hero-header .hero-header__phone:active {
-  color: rgba(255, 255, 255, 0.50);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* for disabled add class hero-header__phone--disabled*/
 
-.hero-header__phone--disabled{
+.hero-header__phone--disabled {
   color: $color-default-white;
   pointer-events: none;
 
@@ -169,6 +168,7 @@
 }
 
 .hero-header.is-opened .hero-header__toggle {
+  background-color: $color-default-white;
 
   svg {
     fill: $color-default-black;
@@ -202,7 +202,7 @@
 }
 
 /* .hero-header.is-opened */
-.hero-header.is-opened  {
+.hero-header.is-opened {
   background-color: $color-default-white;
 }
 
@@ -232,17 +232,12 @@
   }
 }
 
-.hero-header.is-opened .hero-header__toggle{
-  background-color: $color-default-white;
-}
-
 .hero-header.is-opened .hero-header__list {
   background-color: $color-default-white;
   padding-left: 45px;
   padding-bottom: 70px;
   position: absolute;
   width: 100%;
-  display: block;
   top: 100%;
   display: flex;
   flex-direction: column;
@@ -266,7 +261,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(45, 56, 63, 0.60);
+  background-color: rgba(45, 56, 63, 0.6);
   z-index: 1;
 }
 

@@ -11,8 +11,6 @@ function initPromoSwiper() {
       clickable: true,
     },
 
-
-
     // перетаскивание на ПК
     simulateTouch: true,
     // чувствительность свайпа
