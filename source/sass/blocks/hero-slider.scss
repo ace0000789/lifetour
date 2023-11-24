@@ -111,6 +111,10 @@
     text-align: center;
     max-height: 750px;
   }
+
+  @include vp-767 {
+    max-height: 380px;
+  }
 }
 
 .hero-slider__title {
@@ -132,6 +136,13 @@
     margin-bottom: 15px;
     width: 670px;
   }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 
 .hero-slider__text {
@@ -145,6 +156,13 @@
     width: 500px;
     margin: 0 auto;
     margin-bottom: 25px;
+  }
+
+  @include vp-767 {
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+    padding: 0 25px;
   }
 }
 
@@ -223,6 +241,10 @@
     margin-bottom: 90px;
     height: 300px;
     width: 442px;
+  }
+
+  @include vp-767 {
+    display: none;
   }
 
   &--polaroid {
