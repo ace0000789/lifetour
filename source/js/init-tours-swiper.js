@@ -3,6 +3,11 @@ import Swiper from './vendor/swiper';
 function initToursSwiper() {
   const myImageSlider = new Swiper('[data-validate="swiper-tours"]', {
 
+    navigation: {
+      nextEl: '[data-validate="tours-button-next"]',
+      prevEl: '[data-validate="tours-button-prev"]',
+    },
+
     // перетаскивание на ПК
     simulateTouch: true,
     // чувствительность свайпа
