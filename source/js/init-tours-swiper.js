@@ -3,13 +3,6 @@ import Swiper from './vendor/swiper';
 function initToursSwiper() {
   const myImageSlider = new Swiper('[data-validate="swiper-tours"]', {
 
-
-    // Пагинация
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-
     // перетаскивание на ПК
     simulateTouch: true,
     // чувствительность свайпа
@@ -30,7 +23,7 @@ function initToursSwiper() {
     // Автовысота картинки
     autoHeight: true,
     // Бесконечный слайдер
-    loop: false,
+    loop: true,
     // Количнство дублирущих слайдов
     loopedSlides: 0,
     // Свободный режим (перетаскивание по 1 фрагменту)
@@ -41,10 +34,11 @@ function initToursSwiper() {
     effect: 'slide',
     breakpoints: {
       1440: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         slidesPerGroup: 1,
         centeredSlides: false,
         allowTouchMove: true,
+        spaceBetween: 30,
       },
       768: {
         slidesPerView: 1,
