@@ -23,6 +23,7 @@
   padding: 0;
 }
 
+/* Arrows */
 .tours-slider__control {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,6 +46,7 @@
   display: block;
   margin: 0;
   padding: 0;
+  z-index: 0;
 
   @include hover-focus {
     border: 1px solid $color-resolution-blue;
