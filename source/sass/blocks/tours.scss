@@ -171,5 +171,24 @@
   margin: 0;
   padding: 0;
 }
+
+.tours-slider__about-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.tours-slider__about-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+
 /**/
 
