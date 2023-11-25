@@ -131,6 +131,7 @@
   height: 416px;
   background-color: $color-navy-blue;
   position: relative;
+  outline: none;
 }
 
 .tours-slider .swiper-slide img {
@@ -250,9 +251,47 @@
   svg {
     position: absolute;
     right: 9px;
-    top: 50%;
+    top: 51%;
     transform: translateY(-50%);
     stroke: $color-default-black;
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+    outline: none;
+
+    svg {
+      stroke: $color-resolution-blue;
+    }
+  }
+}
+
+.tours .tours__link:active {
+  color: $color-navy-blue;
+
+  svg {
+    stroke: $color-navy-blue;
+  }
+}
+
+/* for disabled add class tours__link--disabled */
+
+.tours__link--disabled {
+  color: $color-navy-blue;
+  cursor: default;
+  pointer-events: none;
+
+  svg {
+    stroke: $color-navy-blue;
+  }
+
+  @include hover-focus {
+    color: $color-navy-blue;
+    outline: none;
+
+    svg {
+      stroke: $color-navy-blue;
+    }
   }
 }
 
