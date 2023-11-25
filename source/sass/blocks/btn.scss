@@ -2,14 +2,12 @@
   display: inline-flex;
   padding: 19px 32.5px;
   border: 1px solid $color-navy-blue;
-
   color: $color-default-white;
-
   background-color: $color-navy-blue;
   cursor: pointer;
-
   transition: opacity $trans-default;
   max-width: 180px;
+  user-select: none;
 
   &:disabled {
     background-color: $color-nobel;

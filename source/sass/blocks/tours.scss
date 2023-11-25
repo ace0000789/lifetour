@@ -132,6 +132,7 @@
   background-color: $color-navy-blue;
   position: relative;
   outline: none;
+  user-select: none;
 }
 
 .tours-slider .swiper-slide img {
@@ -247,6 +248,7 @@
   text-transform: uppercase;
   padding: 11px 28px 9px 10px;
   position: relative;
+  user-select: none;
 
   svg {
     position: absolute;
