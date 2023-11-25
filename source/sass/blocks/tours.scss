@@ -165,7 +165,7 @@
   align-items: center;
 }
 
-.tour-slider__info {
+.tours-slider__info {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -179,13 +179,13 @@
   }
 }
 
-.tour-slider__text {
+.tours-slider__text {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
 }
 
-.tour-slider__subtitle {
+.tours-slider__subtitle {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -194,7 +194,7 @@
   padding: 0;
 }
 
-.tour-slider__line {
+.tours-slider__line {
   width: 80px;
   height: 1px;
   border-bottom: 1px solid $color-default-white;
