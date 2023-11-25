@@ -5,6 +5,7 @@
 
 .tours-slider {
   overflow: hidden;
+  margin-bottom: 53px;
 }
 
 .tours-slider__intro {
@@ -27,6 +28,7 @@
   margin: 0;
   padding: 0;
   z-index: 2;
+  padding-top: 3px;
 }
 
 .tours-slider__title-shadow {
@@ -48,8 +50,8 @@
 .tours-slider__control {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6px;
-  align-self: flex-start;
+  gap: 4px;
+  justify-content: space-between;
   z-index: 1;
 }
 
@@ -64,7 +66,7 @@
   position: static;
   background-color: $color-navy-blue;
   border: 1px solid $color-navy-blue;
-  width: 36px;
+  width: 37px;
   height: 35px;
   display: block;
   margin: 0;
@@ -232,3 +234,26 @@
   font-weight: 700;
   line-height: 13px;
 }
+
+.tours__link {
+  display: block;
+  width: 237px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  padding: 11px 28px 9px 10px;
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    stroke: $color-default-black;
+  }
+}
+
+/**/
