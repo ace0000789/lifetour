@@ -12,6 +12,10 @@
 .tours-slider {
   overflow: hidden;
   margin-bottom: 53px;
+
+  @include vp-1439 {
+    margin-bottom: 25px;
+  }
 }
 
 .tours-slider__intro {
@@ -179,7 +183,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 11px;
   align-items: center;
 
   &--city {
