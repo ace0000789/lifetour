@@ -9,11 +9,10 @@
 
 .tours-slider__intro {
   margin-bottom: 50px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto 78px;
+  gap: auto;
   justify-content: space-between;
-  align-items: flex-end;
   min-height: 38px;
 }
 
@@ -42,6 +41,7 @@
   top: -18px;
   width: 1000px;
   z-index: 1;
+  overflow: hidden;
 }
 
 /* Arrows */
@@ -50,6 +50,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 6px;
   align-self: flex-start;
+  z-index: 1;
 }
 
 
@@ -143,11 +144,11 @@
   bottom: 0;
   z-index: 100;
   color: $color-default-white;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 15px;
-  flex-wrap: wrap;
   background: $slide-gradient;
+  overflow: scroll;
 }
 
 .tours-slider__subwrapper {
