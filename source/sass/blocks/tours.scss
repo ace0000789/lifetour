@@ -148,7 +148,8 @@
   grid-template-columns: 1fr;
   gap: 15px;
   background: $slide-gradient;
-  overflow: scroll;
+  max-height: 416px;
+  overflow-y: auto;
 }
 
 .tours-slider__subwrapper {
