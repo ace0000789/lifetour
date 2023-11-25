@@ -54,7 +54,7 @@
     outline: none;
 
     svg {
-     fill: $color-resolution-blue;
+      fill: $color-resolution-blue;
     }
   }
 }
@@ -76,12 +76,12 @@
 }
 
 .tours .swiper-button-prev svg,
-.tours .swiper-button-next svg{
+.tours .swiper-button-next svg {
   fill: $color-default-white;
   transform: translate(40%, 15%);
 }
 
-.tours .swiper-button-next svg{
+.tours .swiper-button-next svg {
   transform: rotate(180deg) translate(-40%, -15%);
 }
 
@@ -95,8 +95,8 @@
     background-color: $color-navy-blue;
     border: 1px solid $color-navy-blue;
 
-  svg {
-     fill: $color-default-white;
+    svg {
+      fill: $color-default-white;
     }
   }
 }
@@ -187,9 +187,3 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-
-
-
-/**/
-
