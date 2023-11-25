@@ -168,8 +168,8 @@
 
 .tour-slider__line {
   width: 80px;
-  margin: 0;
-  padding: 0;
+  height: 1px;
+  border-bottom: 1px solid $color-default-white;
 }
 
 .tours-slider__about-list {
