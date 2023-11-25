@@ -1,6 +1,7 @@
 .tours {
   padding-top: 120px;
   padding-bottom: 100px;
+  position: relative;
 }
 
 .tours-slider {
@@ -296,5 +297,16 @@
     }
   }
 }
+
+.tours__background img {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include vp-1439 {
+    height: 1364px;
+  }
+}
+
 
 /**/
