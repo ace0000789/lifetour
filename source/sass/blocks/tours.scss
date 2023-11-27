@@ -112,78 +112,7 @@
     padding-bottom: 2px;
   }
 }
-
-
-.tours .swiper-button-prev::after,
-.tours .swiper-button-next::after {
-  display: none;
-}
-
-.tours .swiper-button-prev,
-.tours .swiper-button-next {
-  position: static;
-  background-color: $color-navy-blue;
-  border: 1px solid $color-navy-blue;
-  width: 37px;
-  height: 35px;
-  display: block;
-  margin: 0;
-  padding: 0;
-  z-index: 0;
-
-  @include hover-focus {
-    border: 1px solid $color-resolution-blue;
-    background-color: $color-default-white;
-    outline: none;
-
-    svg {
-      fill: $color-resolution-blue;
-    }
-  }
-}
-
-.tours .tours-slider__control .swiper-button-prev:active {
-  background-color: $color-resolution-blue;
-
-  svg {
-    fill: $color-default-white;
-  }
-}
-
-.tours .tours-slider__control .swiper-button-next:active {
-  background-color: $color-resolution-blue;
-
-  svg {
-    fill: $color-default-white;
-  }
-}
-
-.tours .swiper-button-prev svg,
-.tours .swiper-button-next svg {
-  fill: $color-default-white;
-  transform: translate(60%, 45%);
-}
-
-.tours .swiper-button-next svg {
-  transform: rotate(180deg) translate(-60%, -45%);
-}
-
-/* for disabled add class swiper-button--disabled*/
-
-.tours-slider__control .swiper-button--disabled {
-  pointer-events: none;
-
-
-  @include hover-focus {
-    background-color: $color-navy-blue;
-    border: 1px solid $color-navy-blue;
-
-    svg {
-      fill: $color-default-white;
-    }
-  }
-}
-
+    
 /* Slide */
 .tours-slider .swiper-slide {
   height: 416px;
