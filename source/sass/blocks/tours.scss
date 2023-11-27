@@ -384,6 +384,8 @@
 }
 
 .tours__background img {
+  height: 1630px;
+
   @include vp-1439 {
     height: 1364px;
   }
