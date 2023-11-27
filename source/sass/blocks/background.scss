@@ -1,0 +1,44 @@
+
+.tours__background {
+  position: absolute;
+  right: 0;
+  top: 800px;
+  z-index: -1;
+
+  @include vp-1439 {
+    top: 1024px;
+  }
+
+  @include vp-767 {
+    height: 595px;
+    right: 0;
+    left: auto;
+    top: 678px;
+  }
+
+  @include vp-526 {
+    height: 595px;
+    width: 346px;
+    left: 179px;
+    top: 678px;
+  }
+}
+
+.tours__background img {
+  height: 1630px;
+
+  @include vp-1439 {
+    height: 1364px;
+  }
+
+  @include vp-767 {
+    display: block;
+    height: 595px;
+    width: 100%;
+  }
+
+  @include vp-526 {
+    height: auto;
+    width: auto;
+  }
+}
