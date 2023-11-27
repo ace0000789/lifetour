@@ -221,6 +221,23 @@
   gap: 14px;
   justify-content: space-between;
   align-items: center;
+
+  @include vp-767 {
+    gap: 0;
+    row-gap: 12px;
+  }
+}
+
+.tours-slider__wrapper-time {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  @include vp-767 {
+    column-gap: 14px;
+    row-gap: 12px;
+  }
 }
 
 .tours-slider__info {
@@ -230,11 +247,19 @@
   gap: 11px;
   align-items: center;
 
+  @include vp-767 {
+    gap: 10px;
+  }
+
   &--city {
     gap: 7px;
     background-color: $color-navy-blue;
     padding: 8px 13px 8px 14px;
     margin-right: auto;
+
+    @include vp-767 {
+      gap: 7px;
+    }
   }
 }
 
@@ -362,4 +387,3 @@
     }
   }
 }
-
