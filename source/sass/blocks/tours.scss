@@ -358,20 +358,39 @@
   }
 }
 
-.tours__background img {
+
+.tours__background {
   position: absolute;
-  top: 0;
   right: 0;
+  top: 0;
   z-index: -1;
+
+  @include vp-767 {
+    height: 595px;
+    right: 0;
+  }
+
+  @include vp-526 {
+    height: 595px;
+    left: 179px;
+  }
+}
+
+.tours__background img {
 
   @include vp-1439 {
     height: 1364px;
   }
 
   @include vp-767 {
+    display: block;
     height: 595px;
-    width: 173px;
-    top: 100px;
-    object-fit: contain;
+    width: 100%;
+  }
+
+  @include vp-526 {
+    left: 200px;
+    overflow: hidden;
+    object-fit: cover;
   }
 }
