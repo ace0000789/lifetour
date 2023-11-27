@@ -1,5 +1,5 @@
 
-.tours__background {
+.background {
   position: absolute;
   right: 0;
   top: 800px;
@@ -24,7 +24,7 @@
   }
 }
 
-.tours__background img {
+.background img {
   height: 1630px;
 
   @include vp-1439 {
