@@ -12,6 +12,10 @@
     padding-top: 39px;
     padding-bottom: 20px;
   }
+
+  @include vp-526 {
+    overflow: hidden;
+  }
 }
 
 .tours-slider {
@@ -214,7 +218,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 3px;
   justify-content: space-between;
   align-items: center;
 }
@@ -376,7 +380,6 @@
     height: 595px;
     width: 346px;
     left: 179px;
-    overflow: hidden;
   }
 }
 
