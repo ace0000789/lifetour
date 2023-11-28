@@ -46,15 +46,26 @@
   transform: rotate(180deg) translate(-60%, -45%);
 }
 
-/* for disabled add class swiper-button--disabled*/
+/* style for swiper btn disabled */
+
+.wrapper .swiper-button-disabled {
+  pointer-events: none;
+  opacity: 1;
+  background-color: $color-nobel;
+  border: 1px solid $color-nobel;
+}
+
+/* for CUSTOM disabled add class swiper-button--disabled */
 
 .wrapper .swiper-button--disabled {
   pointer-events: none;
-
+  opacity: 1;
+  background-color: $color-nobel;
+  border: 1px solid $color-nobel;
 
   @include hover-focus {
-    background-color: $color-navy-blue;
-    border: 1px solid $color-navy-blue;
+    background-color: $color-nobel;
+    border: 1px solid $color-nobel;
 
     svg {
       fill: $color-default-white;
