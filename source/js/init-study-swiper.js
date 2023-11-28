@@ -44,6 +44,7 @@ function initStudySwiper() {
         centeredSlides: false,
         allowTouchMove: true,
         spaceBetween: 20,
+        watchSlidesProgress: true,
       },
       768: {
         slidesPerView: 3,

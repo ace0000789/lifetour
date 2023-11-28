@@ -105,6 +105,14 @@
   align-self: stretch;
 }
 
+.study .swiper-slide {
+  visibility: hidden;
+}
+
+.study .swiper-slide-visible {
+  visibility: visible;
+}
+
 
 .study .swiper-slide img {
   margin-bottom: 16px;
