@@ -87,7 +87,7 @@
 
 
 .study .swiper-slide img {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   object-fit: cover;
   height: 200px;
   width: 100%;
@@ -98,7 +98,7 @@
   grid-template-columns: auto 24px;
   justify-content: space-between;
   min-height: 32px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .study-slider__name {
@@ -113,12 +113,14 @@
   width: 24px;
   height: 24px;
   border: 1px solid rgba(45, 56, 63, 0.3);
+  position: relative;
 
   svg {
+    position: absolute;
     fill: $color-default-black;
     left: 50%;
-    top: 50%;
-    transform: translate(30%, -20%);
+    top: 45%;
+    transform: translate(-50%, -50%);
   }
 
   @include hover-focus {
@@ -157,7 +159,6 @@
   }
 
 }
-
 
 .study-slider__text {
   margin: 0;
