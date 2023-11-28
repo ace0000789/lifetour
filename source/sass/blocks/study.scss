@@ -112,15 +112,52 @@
 .study-slider__link {
   width: 24px;
   height: 24px;
-  border: 1px solid rgba(45, 56, 63, 0.3)
+  border: 1px solid rgba(45, 56, 63, 0.3);
+
+  svg {
+    fill: $color-default-black;
+    left: 50%;
+    top: 50%;
+    transform: translate(30%, -20%);
+  }
+
+  @include hover-focus {
+    border: 1px solid $color-default-black;
+    outline: none;
+  }
 }
 
-.study-slider__link svg {
-  fill: $color-default-black;
-  left: 50%;
-  top: 50%;
-  transform: translate(30%, -20%);
+.study .study-slider__link:active {
+  border: 1px solid $color-navy-blue;
+  background-color: $color-navy-blue;
+
+  svg {
+    fill: $color-default-white;
+  }
 }
+
+/* for disabled add class study-slider__link--disabled */
+.study-slider__link--disabled {
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  pointer-events: none;
+
+  svg {
+    fill: $color-default-black;
+    opacity: 0.3;
+  }
+
+  @include hover-focus {
+    border: 1px solid rgba(45, 56, 63, 0.3);
+    pointer-events: none;
+
+    svg {
+      fill: $color-default-black;
+      opacity: 0.3;
+    }
+  }
+
+}
+
 
 .study-slider__text {
   margin: 0;
