@@ -54,6 +54,7 @@
   @include vp-767 {
     width: 80%;
     grid-template-columns: 1fr;
+    grid-template-rows: auto ;
     row-gap: 25px;
     padding-left: 30px;
     padding-top: 0;
