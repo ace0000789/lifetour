@@ -54,6 +54,7 @@ function initStudySwiper() {
 
       0: {
         slidesPerView: 1,
+        watchSlidesProgress: true,
       },
     },
   });
