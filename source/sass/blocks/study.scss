@@ -3,6 +3,7 @@
   padding-bottom: 56px;
 }
 
+/* text */
 .study__intro {
   position: relative;
 }
@@ -39,5 +40,35 @@
   margin-bottom: 56px;
 }
 
+/* pre slider */
+
+.study-slider__intro {
+  display: grid;
+  grid-template-columns: auto 78px;
+  justify-content: space-between;
+  min-height: 55px;
+  margin-bottom: 20px;
+}
+
+.study-slider__title {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.study-slider__control {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: end;
+}
+
+/* slider */
+
+.swiper-container {
+  overflow: hidden;
+}
 
 /**/
