@@ -28,7 +28,7 @@ function initStudySwiper() {
     // Автовысота картинки
     autoHeight: true,
     // Бесконечный слайдер
-    loop: true,
+    loop: false,
     // Количнство дублирущих слайдов
     loopedSlides: 0,
     // Свободный режим (перетаскивание по 1 фрагменту)
