@@ -19,7 +19,7 @@
   @include vp-1439 {
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 44px;
+    margin-bottom: 32px;
   }
 }
 
@@ -37,7 +37,8 @@
     width: 590px;
     grid-template-columns: 344px 231px;
     grid-template-rows: auto 55px auto;
-    row-gap: 15px;
+    row-gap: 17px;
+    padding-left: 10px;
   }
 
   &::after {
@@ -78,13 +79,17 @@
     left: 10px;
 
     @include vp-1439 {
-      bottom: -22px;
-      left: -8px
+      bottom: -24px;
+      left: -0;
     }
   }
 
   svg {
     padding-top: 1px;
+
+    @include vp-1439 {
+      padding-top: 2px;
+    }
   }
 }
 
@@ -92,9 +97,10 @@
   @include vp-1439 {
     grid-column: 2;
     grid-row: 3;
+    margin-top: 2px;
 
     &::after {
-      top: -22px;
+      top: -27px;
     }
   }
 }
@@ -103,9 +109,10 @@
   @include vp-1439 {
     grid-column: 1;
     grid-row: 3;
+    margin-top: 2px;
 
     &::after {
-      top: -22px;
+      top: -27px;
     }
   }
 }
@@ -136,5 +143,6 @@
   @include vp-1439 {
     font-size: 14px;
     line-height: 22px;
+    max-width: 196px;
   }
 }
