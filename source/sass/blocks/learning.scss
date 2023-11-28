@@ -1,0 +1,26 @@
+.learning {
+  margin-bottom: 56px;
+  padding-left: 120px;
+}
+
+.learning__title {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 23px;
+}
+
+.learning__list {
+  list-style: none;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.learning__item {
+  width: 253.3px;
+}
+
+/**/
