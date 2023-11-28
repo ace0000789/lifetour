@@ -2,6 +2,10 @@
   margin-bottom: 56px;
   padding-left: 120px;
   padding-top: 2px;
+
+  @include vp-1439 {
+    padding: 0 45px
+  }
 }
 
 .learning__title {
@@ -11,6 +15,12 @@
   font-weight: 700;
   line-height: 21px;
   margin-bottom: 20px;
+
+  @include vp-1439 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 44px;
+  }
 }
 
 .learning__list {
@@ -23,6 +33,13 @@
   position: relative;
   width: 100%;
 
+  @include vp-1439 {
+    width: 590px;
+    grid-template-columns: 344px 231px;
+    grid-template-rows: auto 55px auto;
+    row-gap: 15px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -31,6 +48,10 @@
     bottom: 0;
     background-color: $color-navy-blue;
     opacity: 0.2;
+
+    @include vp-1439 {
+      display: none;
+    }
   }
 }
 
@@ -42,6 +63,10 @@
   position: relative;
   padding-bottom: 8px;
 
+  @include vp-1439 {
+    padding: 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -51,10 +76,53 @@
     bottom: -7px;
     background-color: $color-navy-blue;
     left: 10px;
+
+    @include vp-1439 {
+      bottom: -22px;
+      left: -8px
+    }
   }
 
   svg {
     padding-top: 1px;
+  }
+}
+
+.learning__item--tree {
+  @include vp-1439 {
+    grid-column: 2;
+    grid-row: 3;
+
+    &::after {
+      top: -22px;
+    }
+  }
+}
+
+.learning__item--mount {
+  @include vp-1439 {
+    grid-column: 1;
+    grid-row: 3;
+
+    &::after {
+      top: -22px;
+    }
+  }
+}
+
+
+.learning__item:nth-child(3n) {
+  display: none;
+
+  &::after {
+    display: none;
+  }
+
+  @include vp-1439 {
+    display: block;
+    border: 1px solid rgba(2, 102, 193, 0.1);
+    border-left: none;
+    padding: 0;
   }
 }
 
@@ -64,8 +132,9 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+
+  @include vp-1439 {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
-
-
-
-/**/
