@@ -1,6 +1,11 @@
 .study {
   padding-top: 20px;
   padding-bottom: 56px;
+
+  @include vp-1439 {
+    padding-top: 45px;
+    padding-bottom: 25px;
+  }
 }
 
 /* text */
@@ -17,6 +22,12 @@
   padding-top: 23px;
   margin-bottom: 32px;
   padding-left: 15px;
+
+  @include vp-1439 {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 25px;
+  }
 }
 
 .study__title-shadow {
@@ -30,6 +41,12 @@
   left: 0;
   opacity: 0.03;
   padding-left: 15px;
+
+  @include vp-1439 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+  }
 }
 
 .study__text {
