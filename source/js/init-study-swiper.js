@@ -49,6 +49,7 @@ function initStudySwiper() {
       768: {
         slidesPerView: 3,
         spaceBetween: 20,
+        watchSlidesProgress: true,
       },
 
       0: {

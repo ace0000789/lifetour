@@ -15,6 +15,11 @@
     &--hero {
       padding: 0;
     }
+
+    &--study {
+      max-width: none;
+      padding: 0 15px;
+    }
   }
 
   @include vp-767 {

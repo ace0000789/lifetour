@@ -3,7 +3,7 @@
   padding-bottom: 56px;
 
   @include vp-1439 {
-    padding-top: 45px;
+    padding-top: 40px;
     padding-bottom: 25px;
   }
 }
@@ -27,6 +27,7 @@
     font-size: 25px;
     font-weight: 800;
     line-height: 25px;
+    margin-bottom: 21px;
   }
 }
 
@@ -38,10 +39,11 @@
   font-weight: 800;
   line-height: 55px;
   top: 5px;
-  left: 0;
+  left: 30px;
   opacity: 0.03;
 
   @include vp-1439 {
+    top: 10px;
     font-size: 40px;
     font-weight: 800;
     line-height: 40px;
@@ -59,6 +61,7 @@
 
   @include vp-1439 {
     max-width: 80%;
+    margin-bottom: 29px;
   }
 }
 
@@ -71,6 +74,10 @@
   min-height: 53px;
   margin-bottom: 20px;
   padding: 0;
+
+  @include vp-1439 {
+    margin-bottom: 30px;
+  }
 }
 
 .study-slider__title {
@@ -185,7 +192,6 @@
       opacity: 0.3;
     }
   }
-
 }
 
 .study-slider__text {
@@ -194,4 +200,3 @@
   font-size: 12px;
   line-height: 16px;
 }
-/**/
