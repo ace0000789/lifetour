@@ -30,6 +30,7 @@
 .wrapper .swiper-button-prev:active,
 .wrapper .swiper-button-next:active {
   background-color: $color-resolution-blue;
+  border: 1px solid $color-resolution-blue;
 
   svg {
     fill: $color-default-white;
