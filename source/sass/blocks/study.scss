@@ -26,7 +26,7 @@
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
-  top: 0;
+  top: 5px;
   left: 0;
   opacity: 0.03;
   padding-left: 15px;
@@ -49,7 +49,7 @@
   display: grid;
   grid-template-columns: auto 78px;
   justify-content: space-between;
-  min-height: 55px;
+  min-height: 53px;
   margin-bottom: 20px;
 }
 
@@ -66,6 +66,7 @@
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   align-items: end;
+  gap: 4px;
 }
 
 /* slider */
@@ -82,10 +83,12 @@
   background-color: $color-default-white;
 }
 
+
 .study .swiper-slide img {
   margin-bottom: 15px;
   object-fit: cover;
   height: 200px;
+  width: 100%;
 }
 
 .study-slider__profile {
@@ -93,6 +96,7 @@
   grid-template-columns: auto 24px;
   justify-content: space-between;
   min-height: 32px;
+  margin-bottom: 15px;
 }
 
 .study-slider__name {
@@ -114,5 +118,12 @@
   left: 50%;
   top: 50%;
   transform: translate(30%, -20%);
+}
+
+.study-slider__text {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
 }
 /**/
