@@ -14,8 +14,9 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 100%;
-  padding-top: 19px;
-  margin-bottom: 38px;
+  padding-top: 23px;
+  margin-bottom: 32px;
+  padding-left: 15px;
 }
 
 .study__title-shadow {
@@ -28,6 +29,7 @@
   top: 0;
   left: 0;
   opacity: 0.03;
+  padding-left: 15px;
 }
 
 .study__text {
@@ -37,7 +39,8 @@
   font-weight: 400;
   line-height: 24px;
   max-width: 820px;
-  margin-bottom: 56px;
+  margin-bottom: 60px;
+  padding-left: 15px;
 }
 
 /* pre slider */
@@ -69,11 +72,6 @@
 
 .study .swiper-container {
   overflow: hidden;
-}
-
-.study .swiper-wrapper {
-  width: 1200px;
-  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -81,6 +79,7 @@
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   outline: none;
   padding: 15px;
+  background-color: $color-default-white;
 }
 
 .study .swiper-slide img {
