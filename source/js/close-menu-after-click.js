@@ -4,6 +4,10 @@ const headerLinks = document.querySelectorAll('[data-validate="header__link"]');
 
 export function closeMenuAfterClick() {
 
+  if (!header || !wrapper) {
+    return;
+  }
+
   header.classList.add('is-closed');
   header.classList.remove('is-opened');
   wrapper.classList.remove('is-bg');
