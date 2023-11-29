@@ -1,6 +1,7 @@
 let header = document.querySelector('[data-validate="header"]');
 let wrapper = document.querySelector('[data-validate="wrapper"]');
 const headerLinks = document.querySelectorAll('[data-validate="header__link"]');
+const html = document.querySelector('[data-validate="html"]');
 
 export function closeMenuAfterClick() {
 
@@ -11,7 +12,7 @@ export function closeMenuAfterClick() {
   header.classList.add('is-closed');
   header.classList.remove('is-opened');
   wrapper.classList.remove('is-bg');
-
+  html.classList.remove('scroll-lock');
 }
 
 headerLinks.forEach((link) => {
@@ -25,6 +26,5 @@ function handleLinkClick(e) {
   let link = e.currentTarget;
   let href = link.getAttribute('href');
 
-  // переход по ссылке
   location.href = href;
 }

@@ -1,5 +1,6 @@
 let header = document.querySelector('[data-validate="header"]');
 let wrapper = document.querySelector('[data-validate="wrapper"]');
+const html = document.querySelector('[data-validate="html"]');
 
 export function checkScreenSize() {
 
@@ -12,6 +13,7 @@ export function checkScreenSize() {
       header.classList.add('is-closed');
       header.classList.remove('is-opened');
       wrapper.classList.remove('is-bg');
+      html.classList.remove('scroll-lock');
     }
   }
 

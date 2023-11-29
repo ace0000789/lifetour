@@ -212,6 +212,10 @@
   background-color: $color-default-white;
 }
 
+.menu-open {
+  overflow: hidden;
+}
+
 .hero-header.is-opened .hero-header__logo-link svg {
   fill: $color-default-black;
 }
