@@ -2,6 +2,11 @@ let header = document.querySelector('[data-validate="header"]');
 let wrapper = document.querySelector('[data-validate="wrapper"]');
 
 export function checkScreenSize() {
+
+
+  if (!header || !wrapper) {
+    return;
+  }
   function handleResize() {
     if (window.innerWidth > 1199) {
       header.classList.add('is-closed');

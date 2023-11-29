@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initMobileMunu} from './init-mobile-menu';
+import {checkScreenSize} from './check-screen-size';
 import {initPromoSwiper} from './init-promo-swiper';
 import {initVideo} from './init-video';
 import {initToursSwiper} from './init-tours-swiper';
@@ -18,6 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   initMobileMunu();
+  checkScreenSize();
   initPromoSwiper();
   initVideo();
   initToursSwiper();

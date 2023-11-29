@@ -1,5 +1,3 @@
-import {checkScreenSize} from './check-screen-size';
-
 export function initMobileMunu() {
   let header = document.querySelector('[data-validate="header"]');
   let headerToggle = document.querySelector('[data-validate="toggle"]');
@@ -24,6 +22,4 @@ export function initMobileMunu() {
       wrapper.classList.remove('is-bg');
     }
   }
-
-  checkScreenSize();
 }
