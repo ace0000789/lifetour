@@ -62,10 +62,14 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 30.5px;
   flex-wrap: wrap;
+  padding-top: 1px;
+  max-width: 681px;
+  row-gap: 29px;
 
   @include vp-1200 {
+    max-width: none;
     display: none;
   }
 }
@@ -111,8 +115,10 @@
   color: $color-default-white;
   user-select: none;
   justify-content: end;
+  padding-top: 4px;
 
   @include vp-1200 {
+    padding-top: 0;
     font-size: 16px;
     line-height: 16px;
   }
