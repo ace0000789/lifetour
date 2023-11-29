@@ -15,7 +15,12 @@ $color-nobel:                       #999999;
 $border-features:                   rgba(2, 102, 193, 0.1);
 
 // Gradient
-$slide-gradient:                    linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
+$slide-gradient:                    linear-gradient(112deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0.00) 94.93%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+
+
+Hero
+Image · 1,440 x 800
+
 // Shadow
 
 $slide-shadow:                      0 0 20px 0 rgba(28, 51, 116, 0.1);

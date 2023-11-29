@@ -40,7 +40,7 @@ function initPromoSwiper() {
     // Листание
     effect: 'slide',
     breakpoints: {
-      1440: {
+      1200: {
         slidesPerView: 1,
         slidesPerGroup: 1,
         centeredSlides: false,
