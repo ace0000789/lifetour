@@ -7,7 +7,7 @@
   height: 800px;
   object-fit: cover;
 
-  @include vp-1439 {
+  @include vp-1200 {
     height: 1024px;
     object-fit: cover;
     overflow: hidden;
@@ -41,7 +41,7 @@
   position: relative;
   min-height: 800px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     min-height: 1024px;
   }
 
@@ -62,7 +62,7 @@
   gap: 7px;
   z-index: 1;
 
-  @include vp-1439 {
+  @include vp-1200 {
     left: 50%;
     transform: translateX(-50%);
     bottom: 40px;
@@ -105,7 +105,7 @@
   overflow: auto;
   max-height: 600px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     top: 214px;
     width: 100%;
     text-align: center;
@@ -130,7 +130,7 @@
   position: relative;
   word-break: break-word;
 
-  @include vp-1439 {
+  @include vp-1200 {
     font-size: 56px;
     line-height: 56px;
     margin: 0 auto;
@@ -153,7 +153,7 @@
   margin-bottom: 35px;
   width: 39%;
 
-  @include vp-1439 {
+  @include vp-1200 {
     width: 500px;
     margin: 0 auto;
     margin-bottom: 25px;
@@ -174,7 +174,7 @@
   line-height: 16px;
   margin-bottom: 134px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     margin-bottom: 45px;
   }
 
@@ -214,7 +214,7 @@
   gap: 10px;
   margin-bottom: 10px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     display: none;
   }
 }
@@ -239,7 +239,7 @@
   width: 482px;
   background-color: $color-default-black;
 
-  @include vp-1439 {
+  @include vp-1200 {
     position: relative;
     top: 0;
     left: 50%;
@@ -265,7 +265,7 @@
       height: 100%;
     }
 
-    @include vp-1439 {
+    @include vp-1200 {
       height: 365px;
       width: 530px;
       margin-bottom: 0;
@@ -278,7 +278,7 @@
     background-color: transparent;
     top: 225px;
 
-    @include vp-1439 {
+    @include vp-1200 {
       width: 340px;
       height: 220px;
       top: 0;
@@ -292,7 +292,7 @@
   height: 317px;
   background-color: $color-default-black;
 
-  @include vp-1439 {
+  @include vp-1200 {
     height: 300px;
     width: 442px;
   }
@@ -302,7 +302,7 @@
   height: 317px;
   object-fit: cover;
 
-  @include vp-1439 {
+  @include vp-1200 {
     height: 300px;
     width: 442px;
   }

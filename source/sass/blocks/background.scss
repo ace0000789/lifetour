@@ -5,7 +5,7 @@
   top: 800px;
   z-index: -1;
 
-  @include vp-1439 {
+  @include vp-1200 {
     top: 1024px;
   }
 
@@ -27,7 +27,7 @@
 .background img {
   height: 1630px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     height: 1364px;
   }
 

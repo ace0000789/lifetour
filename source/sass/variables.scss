@@ -15,11 +15,8 @@ $color-nobel:                       #999999;
 $border-features:                   rgba(2, 102, 193, 0.1);
 
 // Gradient
-$slide-gradient:                    linear-gradient(112deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0.00) 94.93%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+$slide-gradient:                    linear-gradient(112deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
 
-
-Hero
-Image · 1,440 x 800
 
 // Shadow
 
@@ -50,7 +47,7 @@ $trans-600:                         0.6s $tf-default;
 $vp-320:                            320px;
 $vp-527:                            527px;
 $vp-768:                             768px;
-$vp-1440:                           1200px;
+$vp-1200:                           1200px;
 
 
 // Retina

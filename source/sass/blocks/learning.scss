@@ -3,7 +3,7 @@
   padding-left: 120px;
   padding-top: 2px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     padding: 0 45px;
   }
 
@@ -20,7 +20,7 @@
   line-height: 21px;
   margin-bottom: 20px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     font-size: 18px;
     line-height: 18px;
     margin-bottom: 32px;
@@ -44,7 +44,7 @@
   width: 100%;
   row-gap: 20px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     width: 590px;
     grid-template-columns: 344px 7px 231px;
     grid-template-rows: auto 55px auto;
@@ -70,7 +70,7 @@
     background-color: $color-navy-blue;
     opacity: 0.2;
 
-    @include vp-1439 {
+    @include vp-1200 {
       display: none;
     }
 
@@ -93,7 +93,7 @@
   position: relative;
   padding-bottom: 8px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     padding: 0;
   }
 
@@ -111,7 +111,7 @@
     background-color: $color-navy-blue;
     left: 10px;
 
-    @include vp-1439 {
+    @include vp-1200 {
       bottom: -24px;
       left: -0;
     }
@@ -137,7 +137,7 @@
   svg {
     padding-top: 1px;
 
-    @include vp-1439 {
+    @include vp-1200 {
       padding-top: 2px;
     }
 
@@ -150,7 +150,7 @@
 }
 
 .learning__item--shoes {
-  @include vp-1439 {
+  @include vp-1200 {
     grid-column: 2/-1;
     grid-row: 1;
   }
@@ -166,7 +166,7 @@
 }
 
 .learning__item--tree {
-  @include vp-1439 {
+  @include vp-1200 {
     grid-column: 2/-1;
     grid-row: 3;
     margin-top: 2px;
@@ -189,7 +189,7 @@
 }
 
 .learning__item--mount {
-  @include vp-1439 {
+  @include vp-1200 {
     grid-column: 1;
     grid-row: 3;
     margin-top: 2px;
@@ -218,7 +218,7 @@
     display: none;
   }
 
-  @include vp-1439 {
+  @include vp-1200 {
     display: block;
     border: 1px solid rgba(2, 102, 193, 0.1);
     border-left: none;
@@ -241,7 +241,7 @@
   max-width: 198px;
   word-wrap: break-word;
 
-  @include vp-1439 {
+  @include vp-1200 {
     font-size: 14px;
     line-height: 22px;
     max-width: 196px;
