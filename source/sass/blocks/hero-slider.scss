@@ -3,13 +3,16 @@
 }
 
 .hero-slider img {
+  height: 908px;
   width: 100%;
-  height: 800px;
   object-fit: cover;
+
+  @include vp-1580 {
+    height: 800px;
+  }
 
   @include vp-1200 {
     height: 1024px;
-    object-fit: cover;
     overflow: hidden;
   }
 
