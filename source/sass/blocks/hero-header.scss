@@ -227,6 +227,15 @@
     padding-top: 0;
     height: 30px;
   }
+
+  @include hover-focus {
+    opacity: 0.5;
+    outline: none;
+  }
+}
+
+.hero-header .hero-header__toggle:active {
+  opacity: 1;
 }
 
 .hero-header__toggle svg {
