@@ -67,18 +67,20 @@
 /* Пагинация */
 
 .hero-slider .swiper-pagination {
-  left: 87.2%;
-  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
   bottom: 97px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 7px;
   z-index: 1;
 
   @include vp-1200 {
-    left: 50%;
-    transform: translateX(-50%);
+    width: auto;
+    justify-content: center;
     bottom: 40px;
 
     @include vp-767 {
