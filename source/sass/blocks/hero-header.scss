@@ -67,7 +67,7 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 30.5px;
+  gap: 20.6px;
   flex-wrap: wrap;
   padding-top: 1px;
   max-width: 681px;
@@ -82,13 +82,13 @@
 .hero-header__item {
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .hero-header__link {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100%;
   margin: auto;
   font-size: 16px;
   font-style: normal;
@@ -97,6 +97,7 @@
   color: $color-default-white;
   user-select: none;
   position: relative;
+  padding: 3px 5px;
 
   @include vp-1200 {
     color: $color-default-black;
@@ -110,20 +111,22 @@
     line-height: 14px;
     letter-spacing: 0.56px;
   }
-/*
+
   @include hover {
     &:after {
       content: "";
       position: absolute;
-      bottom: 16px;
+      bottom: -3px;
       width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
       height: 1px;
       background-color: $color-default-white;
     }
   }
-*/
+
   @include focus {
-    outline: none;
+
   }
 }
 
