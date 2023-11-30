@@ -191,19 +191,21 @@
 
 .hero-header.is-opened .hero-header__toggle {
   background-color: $color-default-white;
-  padding-left: 12px;
+  padding-left: 10px;
 
   svg {
     fill: $color-default-black;
   }
 
   @include vp-767 {
+    padding-left: 0;
+
     &::before,
     &::after {
       content: "";
       position: absolute;
-      top: 17px;
-      right: 0;
+      top: 12px;
+      right: -2px;
       width: 30px;
       height: 2px;
       background-color: $color-default-black;
