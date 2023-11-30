@@ -117,8 +117,12 @@
   transform: translateX(-50%);
   width: 1200px;
   overflow: auto;
-  max-height: 600px;
+  max-height: 708px;
   z-index: 1;
+
+  @include vp-1580 {
+    max-height: 600px;
+  }
 
   @include vp-1200 {
     top: 214px;
@@ -131,55 +135,97 @@
     max-height: 380px;
     top: 132px;
   }
-}
 
-.hero-slider__title {
-  margin: 0;
-  padding: 0;
-  width: 76.8%;
-  font-size: 77px;
-  font-weight: 800;
-  line-height: 77px;
-  margin-bottom: 25px;
-  z-index: 1;
-  position: relative;
-  word-break: break-word;
+  h3 {
+    margin: 0;
+    padding: 0;
+    width: 76.8%;
+    font-size: 77px;
+    font-weight: 800;
+    line-height: 77px;
+    margin-bottom: 0;
+    z-index: 1;
+    position: relative;
+    word-break: break-word;
 
-  @include vp-1200 {
-    font-size: 56px;
-    line-height: 56px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    width: 670px;
+    @include vp-1580 {
+      margin-bottom: 23px;
+    }
+
+    @include vp-1200 {
+      font-size: 56px;
+      line-height: 56px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      width: 670px;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 26px;
+      width: 100%;
+      padding: 0 15px;
+    }
   }
 
-  @include vp-767 {
-    font-size: 26px;
-    line-height: 26px;
-    width: 100%;
-    padding: 0 15px;
-  }
-}
+  h3 + span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    font-size: 77px;
+    font-weight: 800;
+    line-height: 77px;
+    z-index: 1;
+    position: relative;
+    word-break: break-word;
 
-.hero-slider__text {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 35px;
-  width: 39%;
-
-  @include vp-1200 {
-    width: 500px;
-    margin: 0 auto;
-    margin-bottom: 25px;
+    @include vp-1580 {
+      display: none;
+    }
   }
 
-  @include vp-767 {
-    font-size: 15px;
-    line-height: 20px;
-    width: 100%;
-    padding: 0 18px;
-    margin-bottom: 60px;
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+    width: 39%;
+    margin-top: 23px;
+
+    @include vp-1580 {
+      margin-bottom: 37px;
+      margin-top: 0;
+    }
+
+    @include vp-1200 {
+      width: 500px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+
+    @include vp-767 {
+      font-size: 15px;
+      line-height: 20px;
+      width: 100%;
+      padding: 0 18px;
+      margin-bottom: 60px;
+    }
+  }
+
+  p + p {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 35%;
+
+    @include vp-1580 {
+      display: none;
+    }
   }
 }
 
@@ -187,7 +233,13 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
-  margin-bottom: 134px;
+  margin-bottom: 40px;
+  margin-top: 37px;
+
+  @include vp-1580 {
+    margin-top: 0;
+    margin-bottom: 134px;
+  }
 
   @include vp-1200 {
     margin-bottom: 45px;
