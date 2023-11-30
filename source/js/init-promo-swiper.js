@@ -30,7 +30,7 @@ function initPromoSwiper() {
     // Автовысота картинки
     autoHeight: true,
     // Бесконечный слайдер
-    loop: false,
+    loop: true,
     // Количнство дублирущих слайдов
     loopedSlides: 0,
     // Свободный режим (перетаскивание по 1 фрагменту)
