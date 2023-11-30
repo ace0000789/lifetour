@@ -126,7 +126,9 @@
   }
 
   @include focus {
-
+    outline: none;
+    border: 1px solid $color-default-white;
+    padding: 2px 4px;
   }
 }
 
