@@ -332,6 +332,32 @@
   }
 }
 
+.is-opened .hero-header__link {
+
+  @include hover {
+    &::after{
+      display: none;
+    }
+    opacity: 0.8;
+  }
+
+  @include focus {
+    opacity: 0.5;
+    border: none;
+    padding: 3px 5px;
+  }
+}
+
+.hero-header.is-opened .hero-header__link:active {
+  opacity: 0.2;
+}
+
+.hero-header.is-opened .hero-header__link--disabled {
+  @include focus {
+    opacity: 1;
+  }
+}
+
 .is-bg::after {
   content: "";
   position: absolute;
