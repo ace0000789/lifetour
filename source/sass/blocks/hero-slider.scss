@@ -68,7 +68,7 @@
 
 .hero-slider .swiper-pagination {
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-49.7%);
   width: 1200px;
   bottom: 97px;
   display: flex;
@@ -79,6 +79,7 @@
   z-index: 1;
 
   @include vp-1200 {
+    transform: translateX(-50%);
     width: auto;
     justify-content: center;
     bottom: 40px;
