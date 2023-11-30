@@ -113,7 +113,7 @@
   }
 
   @include hover {
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       bottom: -3px;
@@ -136,7 +136,7 @@
   border: none;
   padding: 3px 5px;
 
-  &:after {
+  &::after {
     display: none;
   }
 }
@@ -343,8 +343,9 @@
 
 .is-opened .hero-header__link {
   padding: 0;
+
   @include hover {
-    &::after{
+    &::after {
       display: none;
     }
     opacity: 0.8;
@@ -417,6 +418,10 @@
 }
 
 .hero-header.is-nojs .hero-header__link {
+  @include vp-1200 {
+    color: $color-default-white;
+  }
+
   @include vp-767 {
     font-size: 10px;
     line-height: 10px;
@@ -428,11 +433,5 @@
   @include vp-1200 {
     grid-column: 2/-1;
     grid-row: 1/2;
-  }
-}
-
-.hero-header.is-nojs .hero-header__link {
-  @include vp-1200 {
-    color: $color-default-white;
   }
 }
