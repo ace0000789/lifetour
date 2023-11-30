@@ -342,7 +342,7 @@
 }
 
 .is-opened .hero-header__link {
-
+  padding: 0;
   @include hover {
     &::after{
       display: none;
@@ -353,17 +353,19 @@
   @include focus {
     opacity: 0.5;
     border: none;
-    padding: 3px 5px;
+    padding: 0;
   }
 }
 
 .hero-header.is-opened .hero-header__link:active {
   opacity: 0.2;
+  padding: 0;
 }
 
 .hero-header.is-opened .hero-header__link--disabled {
   @include focus {
     opacity: 1;
+    padding: 0;
   }
 }
 
