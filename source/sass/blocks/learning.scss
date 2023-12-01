@@ -46,7 +46,7 @@
 
   @include vp-1200 {
     width: 590px;
-    grid-template-columns: 344px 7px 231px;
+    grid-template-columns: 343px 7px 231px;
     grid-template-rows: auto 55px auto;
     row-gap: 17px;
     padding-left: 10px;
@@ -138,6 +138,10 @@
   @include vp-1200 {
     grid-column: 2/-1;
     grid-row: 1;
+
+    &::after {
+      left: 1px;
+    }
   }
 
   @include vp-767 {
@@ -151,9 +155,11 @@
     grid-column: 2/-1;
     grid-row: 3;
     margin-top: 2px;
+    column-gap: 9px;
 
     &::after {
       top: -27px;
+      left: 1px;
     }
   }
 
