@@ -64,11 +64,13 @@
   &::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: calc(100% - 15px);
+    left: 15px;
     height: 1px;
     bottom: 0;
     background-color: $color-navy-blue;
     opacity: 0.2;
+    z-index: -1;
 
     @include vp-1200 {
       display: none;
