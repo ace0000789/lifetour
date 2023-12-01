@@ -352,7 +352,7 @@
 
   &--music {
     width: 340px;
-    height: 220px;
+    height: 250px;
     background-color: transparent;
     top: 227px;
 
@@ -482,4 +482,6 @@
 }
 
 .hero-slider__media.hero-slider__media--music iframe {
+  width: 340px;
+  height: 100%;
 }
