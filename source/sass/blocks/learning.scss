@@ -150,8 +150,8 @@
     margin-left: 0;
     column-gap: 11px;
 
-    &:after {
-      top: 52%
+    &::after {
+      top: 52%;
     }
 
     svg {
@@ -214,7 +214,6 @@
       top: 50%;
     }
   }
-
 }
 
 .learning__item--empty {
