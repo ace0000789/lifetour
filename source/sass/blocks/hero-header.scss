@@ -261,8 +261,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 12px;
-      right: -2px;
+      top: 21px;
+      right: -12px;
       width: 30px;
       height: 2px;
       background-color: $color-default-black;
@@ -277,6 +277,17 @@
       transform: rotate(-45deg);
     }
   }
+
+  @include vp-767 {
+    &::before,
+    &::after {
+      content: "";
+      top: 12px;
+      right: -2px;
+    }
+
+  }
+
 }
 
 /* .hero-header.is-opened */
