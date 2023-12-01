@@ -133,7 +133,7 @@
     }
   }
 }
-/*
+
 .learning__item--shoes {
   @include vp-1200 {
     grid-column: 2/-1;
@@ -143,13 +143,9 @@
   @include vp-767 {
     grid-column: initial;
     grid-row: initial;
-
-    svg {
-      padding-top: 8px;
-    }
   }
 }
-*/
+
 .learning__item--tree {
   @include vp-1200 {
     grid-column: 2/-1;
