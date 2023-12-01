@@ -46,7 +46,7 @@
 
   @include vp-1200 {
     width: 590px;
-    grid-template-columns: 343px 7px 231px;
+    grid-template-columns: 343px 8px 231px;
     grid-template-rows: auto 55px auto;
     row-gap: 17px;
     padding-left: 10px;
@@ -125,12 +125,6 @@
 
   svg {
     margin-top: 2px;
-
-    @include vp-1200 {
-    }
-
-    @include vp-767 {
-    }
   }
 }
 
@@ -138,10 +132,8 @@
   @include vp-1200 {
     grid-column: 2/-1;
     grid-row: 1;
-
-    &::after {
-      left: 1px;
-    }
+    margin-left: 1px;
+    column-gap: 9px;
   }
 
   @include vp-767 {
@@ -154,11 +146,11 @@
   @include vp-1200 {
     grid-column: 2/-1;
     grid-row: 3;
-    margin-top: 2px;
+    margin-top: 1px;
     column-gap: 9px;
 
     &::after {
-      top: -27px;
+      top: -26px;
       left: 1px;
     }
   }
@@ -173,6 +165,10 @@
       left: -26px;
     }
   }
+}
+
+.learning__item--tree .learning__text {
+  margin-top: 1px;
 }
 
 .learning__item--mount {
