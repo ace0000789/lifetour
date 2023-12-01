@@ -18,7 +18,7 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 
   @include vp-1200 {
     font-size: 18px;
@@ -91,7 +91,7 @@
   grid-template-columns: 25px auto;
   gap: 10px;
   position: relative;
-  padding-bottom: 8px;
+  padding-bottom: 9px;
 
   @include vp-1200 {
     padding: 0;
@@ -123,32 +123,17 @@
     }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    background-color: $color-navy-blue;
-    opacity: 0.2;
-    left: 10px;
-  }
-
   svg {
-    padding-top: 1px;
+    margin-top: 2px;
 
     @include vp-1200 {
-      padding-top: 2px;
     }
 
     @include vp-767 {
-      padding-top: 5px;
-      width: 27px;
-      height: 25px;
     }
   }
 }
-
+/*
 .learning__item--shoes {
   @include vp-1200 {
     grid-column: 2/-1;
@@ -164,7 +149,7 @@
     }
   }
 }
-
+*/
 .learning__item--tree {
   @include vp-1200 {
     grid-column: 2/-1;
