@@ -115,10 +115,46 @@
     width: 8px;
     height: 8px;
   }
+
+  @include hover {
+    background-color: #d9d9d9;
+  }
+
+  @include focus {
+    position: relative;
+    outline: none;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.hero-slider .swiper-pagination .swiper-pagination-bullet:active:not(.swiper-pagination-bullet-active) {
+  background-color: rgba(255, 255, 255, 0.5);
+
+  &::after {
+    display: none;
+  }
 }
 
 .hero-slider .swiper-pagination-bullet-active {
   background-color: $color-default-white;
+
+  @include hover {
+    background-color: $color-default-white;
+  }
+
+  &::after {
+    display: none;
+  }
 }
 
 /* Slider text */
