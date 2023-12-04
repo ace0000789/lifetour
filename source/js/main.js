@@ -7,6 +7,7 @@ import {initPromoSwiper} from './init-promo-swiper';
 import {initVideo} from './init-video';
 import {initToursSwiper} from './init-tours-swiper';
 import {initStudySwiper} from './init-study-swiper';
+import {initReviewSwiper} from './init-review-swiper';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -26,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initVideo();
   initToursSwiper();
   initStudySwiper();
+  initReviewSwiper();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
