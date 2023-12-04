@@ -3,11 +3,6 @@
   max-width: 1200px;
   margin: 0 auto;
 
-  &--study {
-    max-width: none;
-    padding: 0 90px;
-  }
-
   @include vp-1200 {
     padding: 0 45px;
     max-width: none;
@@ -15,22 +10,13 @@
     &--hero {
       padding: 0;
     }
-
-    &--study {
-      padding: 0 15px;
-    }
   }
 
   @include vp-767 {
     padding: 0 15px;
 
-    &--study {
-      max-width: none;
+    &--hero {
       padding: 0;
     }
-  }
-
-  &--hero {
-    padding: 0;
   }
 }
