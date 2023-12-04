@@ -1,5 +1,5 @@
 .review {
-  padding: 30px 0 10px;
+  padding: 27px 0 10px;
 }
 
 .review-slider__intro {
@@ -7,11 +7,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 37px;
+  min-height: 59px;
 }
 
 .review-slider__title-wrap {
   position: relative;
+  align-self: flex-end;
 }
 
 .review-slider__title {
@@ -27,43 +29,50 @@
   font-size: 55px;
   font-weight: 800;
   line-height: 55px;
-  bottom: 0;
+  bottom: -2px;
   opacity: 0.03;
 }
 
 .review-slider__control {
+  align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4px;
+  padding-bottom: 2px;
 }
 
 /* Slider */
 
 .review .swiper-slide img {
+  margin-top: 2px;
   width: 258px;
   height: 253px;
   object-fit: cover;
+}
+
+.review .swiper-container {
+  overflow: hidden;
 }
 
 .review .swiper-wrapper {
   padding: 0 10px;
 }
 
-.review .swiper-slide {
+.review .swiper-wrapper .swiper-slide {
   display: grid;
   grid-template-columns: 258px 352px;
   gap: 30px;
-  padding: 20px;
+  padding: 18px 42px 20px 20px;
   box-shadow: $slide-shadow;
   width: 700px;
+  outline: none;
 }
 
 .review__text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 2px;
+  margin-bottom: 14px;
 
   p {
     margin: 0;
@@ -79,7 +88,7 @@
   font-size: 13px;
   font-weight: 700;
   line-height: 13px;
-  margin-bottom: 8px;
+  margin-bottom: 1px;
 }
 
 .review__age {

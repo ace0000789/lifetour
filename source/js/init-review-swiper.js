@@ -39,23 +39,22 @@ function initReviewSwiper() {
     effect: 'slide',
     breakpoints: {
       1200: {
-        slidesPerView: 1.6,
+        slidesPerView: 1.61,
         slidesPerGroup: 1,
         centeredSlides: false,
         allowTouchMove: true,
         spaceBetween: 120,
-        watchSlidesProgress: true,
       },
       768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 30,
         watchSlidesProgress: true,
       },
 
       0: {
         slidesPerView: 1,
+        initialSlide: 1,
         watchSlidesProgress: true,
-        initialSlide: 2,
       },
     },
   });
