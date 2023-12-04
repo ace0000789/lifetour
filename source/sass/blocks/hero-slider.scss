@@ -501,10 +501,11 @@
 /* Disabled button video */
 
 .hero-slider .hero-slider__video-button:disabled {
-  border: 1px solid $color-navy-blue;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  cursor: default;
 
   @include hover-focus {
-    border: 1px solid $color-navy-blue;
+    border: 1px solid rgba(2, 102, 193, 0.1);
 
     &::after {
       border: 11px solid transparent;
