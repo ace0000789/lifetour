@@ -39,14 +39,54 @@
 
 /* Slider */
 
-.swiper-slide img {
+.review .swiper-slide img {
   width: 258px;
   height: 253px;
   object-fit: cover;
 }
 
+.review .swiper-wrapper {
+  padding: 0 10px;
+}
 
+.review .swiper-slide {
+  display: grid;
+  grid-template-columns: 258px 352px;
+  gap: 30px;
+  padding: 20px;
+  box-shadow: $slide-shadow;
+  width: 700px;
+}
 
+.review__text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 2px;
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.review__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  margin-bottom: 8px;
+}
+
+.review__age {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
+}
 
 
 
