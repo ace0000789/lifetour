@@ -1,16 +1,28 @@
 .about {
   padding: 38px 0 56px;
   position: relative;
+
+  @include vp-1200 {
+    padding: 9px 0 0;
+  }
 }
 
 .about__wrapper {
   margin-left: auto;
   width: 585px;
+
+  @include vp-1200 {
+    width: 270px;
+  }
 }
 
 .about__title-wrapper {
   position: relative;
   margin-bottom: 56px;
+
+  @include vp-1200 {
+    margin-bottom: 35px;
+  }
 }
 
 .about__title {
@@ -19,6 +31,12 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 100%;
+
+  @include vp-1200 {
+    font-size: 25px;
+    line-height: 25px;
+    padding-left: 6px;
+  }
 }
 
 .about__title-shadow {
@@ -28,6 +46,12 @@
   position: absolute;
   bottom: -2px;
   opacity: 0.03;
+
+  @include vp-1200 {
+    font-size: 40px;
+    line-height: 40px;
+    bottom: 0;
+  }
 }
 
 .about__text-wrapper {
@@ -36,6 +60,10 @@
   flex-direction: column;
   gap: 29px;
 
+  @include vp-1200 {
+    gap: 29px;
+  }
+
   h3 {
     margin: 0;
     padding: 0;
@@ -43,6 +71,12 @@
     font-weight: 700;
     line-height: 21px;
     margin-bottom: 16px;
+
+    @include vp-1200 {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 11px;
+    }
   }
 
   p {
@@ -60,6 +94,11 @@
   height: 474px;
   width: 808px;
   z-index: -1;
+
+  @include vp-1200 {
+    height: 350px;
+    width: 542px;
+  }
 }
 
 /**/
