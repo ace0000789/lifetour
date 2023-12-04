@@ -713,11 +713,66 @@
       </section>
 
       <section class="review" id="review">
-        <h2 class="review__title"></h2>
-      </section>
+        <div class="container">
+          <div class="review swiper-container" data-validate="swiper-review">
+            <div class="review-slider__intro">
+              <div class="review-slider__title-wrap">
+                <h2 class="review-slider__title">Отзывы</h2>
+                <span class="review-slider__title-shadow">Отзывы</span>
+              </div>
+              <div class="review-slider__control">
+                <div class="swiper-button-prev" data-validate="review-button-prev">
+                  <svg width="15" height="13" role="img" aria-label="Cтрелка.">
+                    <use href="img/sprite.svg#slider-arrow"></use>
+                  </svg>
+                  <span class="visually-hidden">Cтрелка влево.</span>
+                </div>
+                <div class="swiper-button-next" data-validate="review-button-next">
+                  <svg width="15" height="13" role="img" aria-label="Cтрелка.">
+                    <use href="img/sprite.svg#slider-arrow"></use>
+                  </svg>
+                  <span class="visually-hidden">Cтрелка вправо.</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" tabindex="0">
+                <picture>
+                  <source type="image/webp" srcset="img/review/aleksandr.webp 1x, img/review/aleksandr@2x.webp 2x">
+                  <img src="img/review/aleksandr.jpg" width="258" height="253" srcset="img/review/aleksandr@2x.jpg 2x"
+                    alt="Изображение туриста Александра Фролова">
+                </picture>
+                <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы — настоящие эксперты
+                  — всему научили, все показали. Делились увлекательными историями о местах, людях, культуре места.</p>
+                <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Ещё никогда не отдыхал так
+                  душой и телом. Всем очень рекомендую!</p>
+                <h3 class="review__subtitle">Фролов Александр</h3>
+                <span class="review__age">38 лет, Москва</span>
+              </div>
 
-      </main>
-      <footer class="footer"></footer>
+
+              <div class="swiper-slide" tabindex="0">
+
+                <picture>
+                  <source type="image/webp" srcset="img/review/ivan.webp 1x, img/review/ivan@2x.webp 2x">
+                  <img src="img/review/ivan.jpg" width="258" height="253" srcset="img/review/ivan@2x.jpg 2x"
+                    alt="Изображение туриста Александра Фролова">
+                </picture>
+                <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идет по лыжне, далее прошли мимо полигона, по болотам, у озер и лесных ручьев, остатков дач конца 19 века.
+                  Было очень интересно!</p>
+                <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
+                  Всем советую этот тур.</p>
+                <h3 class="review__subtitle">Фролов Александр</h3>
+                <span class="review__age">38 лет, Москва</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </section>
+
+  </main>
+  <footer class="footer"></footer>
   </div>
 
   <script src="js/vendor.min.js"></script>
