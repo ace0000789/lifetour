@@ -1,8 +1,8 @@
 .learning {
   margin-bottom: 56px;
-  padding-left: 120px;
   padding-top: 2px;
   position: relative;
+  margin-left: calc((100vw - 1200px) / 2);
 
   @include vp-1200 {
     padding: 0 45px;
@@ -264,13 +264,17 @@
 
 .learning__background {
   position: absolute;
+  width: 840px;
+  height: 280px;
   top: 36px;
-  right: -220px;
+  left: 700px;
   overflow: hidden;
   z-index: -2;
+  background-color: aqua;
 
   @include vp-1200 {
     right: -375px;
+    display: none;
   }
 
   @include vp-767 {
@@ -280,4 +284,5 @@
 
 .learning__background img {
   height: 280px;
+  object-fit: cover;
 }
