@@ -1,5 +1,9 @@
 .review {
   padding: 27px 0 10px;
+
+  @include vp-1200 {
+    padding: 18px 0 37px;
+  }
 }
 
 .review-slider__intro {
@@ -9,6 +13,11 @@
   justify-content: space-between;
   margin-bottom: 37px;
   min-height: 59px;
+
+  @include vp-1200 {
+    min-height: 49px;
+    margin-bottom: 53px;
+  }
 }
 
 .review-slider__title-wrap {
@@ -22,6 +31,11 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 100%;
+
+  @include vp-1200 {
+    font-size: 25px;
+    line-height: normal;
+  }
 }
 
 .review-slider__title-shadow {
@@ -31,6 +45,11 @@
   line-height: 55px;
   bottom: -2px;
   opacity: 0.03;
+
+  @include vp-1200 {
+    font-size: 40px;
+    line-height: normal;
+  }
 }
 
 .review-slider__control {
@@ -39,6 +58,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 4px;
   padding-bottom: 2px;
+
+  @include vp-1200 {
+    padding-bottom: 0;
+    padding-top: 5px;
+  }
 }
 
 /* Slider */
@@ -48,6 +72,12 @@
   width: 258px;
   height: 253px;
   object-fit: cover;
+
+  @include vp-1200 {
+    margin-top: 0;
+    width: 186px;
+    height: 237px;
+  }
 }
 
 .review .swiper-container {
@@ -56,6 +86,10 @@
 
 .review .swiper-wrapper {
   padding: 0 10px;
+
+  @include vp-1200 {
+    padding: 0;
+  }
 }
 
 .review .swiper-wrapper .swiper-slide {
@@ -66,6 +100,16 @@
   box-shadow: $slide-shadow;
   width: 700px;
   outline: none;
+
+  @include vp-1200 {
+    grid-template-columns: 186px 299px;
+    padding: 20px 30px 19px 20px;
+    width: 565px;
+  }
+}
+
+.review__info {
+  padding-top: 4px;
 }
 
 .review__text {
@@ -73,12 +117,22 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 14px;
+  gap: 10px;;
+
+  @include vp-1200 {
+    margin-bottom: 25px;
+  }
 
   p {
     margin: 0;
     padding: 0;
     font-size: 14px;
     line-height: 22px;
+
+    @include vp-1200 {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 }
 
