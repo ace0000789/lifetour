@@ -53,7 +53,7 @@ function initReviewSwiper() {
 
       0: {
         slidesPerView: 1,
-        initialSlide: 1,
+        initialSlide: 0,
         watchSlidesProgress: true,
       },
     },
