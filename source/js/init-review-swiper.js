@@ -26,7 +26,7 @@ function initReviewSwiper() {
     },
 
     // Автовысота картинки
-    autoHeight: true,
+    autoHeight: false,
     // Бесконечный слайдер
     loop: true,
     // Количнство дублирущих слайдов
@@ -48,7 +48,6 @@ function initReviewSwiper() {
       768: {
         slidesPerView: 'auto',
         spaceBetween: 30,
-        watchSlidesProgress: true,
       },
 
       0: {
