@@ -46,7 +46,7 @@ function initReviewSwiper() {
         spaceBetween: 120,
       },
       768: {
-        slidesPerView: 1,
+        slidesPerView: 'auto',
         spaceBetween: 30,
         watchSlidesProgress: true,
       },
