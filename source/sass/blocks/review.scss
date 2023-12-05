@@ -10,7 +10,7 @@
   }
 }
 
-.review-slider__intro {
+.review__intro {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -29,7 +29,7 @@
   }
 }
 
-.review-slider__title-wrap {
+.review__title-wrap {
   position: relative;
   align-self: flex-end;
 
@@ -39,7 +39,7 @@
   }
 }
 
-.review-slider__title {
+.review__title {
   margin: 0;
   padding: 0;
   font-size: 35px;
@@ -58,7 +58,7 @@
   }
 }
 
-.review-slider__title-shadow {
+.review__title-shadow {
   position: absolute;
   font-size: 55px;
   font-weight: 800;
@@ -77,7 +77,7 @@
   }
 }
 
-.review-slider__control {
+.review__control {
   align-self: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
