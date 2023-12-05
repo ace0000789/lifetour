@@ -12,7 +12,7 @@ function initFeaturesSwiper() {
           nextEl: '[data-validate="features-button-next"]',
           prevEl: '[data-validate="features-button-prev"]',
         },
-        /*
+
         // перетаскивание на ПК
         simulateTouch: true,
         // чувствительность свайпа
@@ -39,7 +39,7 @@ function initFeaturesSwiper() {
         // Свободный режим (перетаскивание по 1 фрагменту)
         freeMod: true,
         // Скорость переклдючения слайда
-        speed: 500,*/
+        speed: 500,
 
         // Листание
         effect: 'slide',
@@ -59,17 +59,15 @@ function initFeaturesSwiper() {
       });
     }
 
-    
   }
   init();
-  let isDestroyed = true;
 
   function handleResize() {
-    if (window.innerWidth < 1200 && !isDestroyed) {
+    if (window.innerWidth < 1200) {
       swiper.destroy(true, true);
-      isDestroyed = true;
-    } else if (window.innerWidth >= 1200 && !swiper) {
-      isDestroyed = false;
+      swiper = null;
+    }
+    if (window.innerWidth >= 1200 && !swiper) {
       init();
     }
   }
