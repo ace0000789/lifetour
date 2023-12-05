@@ -1,6 +1,11 @@
 export const controlLastELementFeatures = () => {
 
   const featuresItems = document.querySelectorAll('.features .swiper-slide');
+
+  if (!featuresItems) {
+    return;
+  }
+
   const isOdd = featuresItems.length % 2 !== 0;
   if (isOdd) {
     const lastElement = featuresItems[featuresItems.length - 1];
