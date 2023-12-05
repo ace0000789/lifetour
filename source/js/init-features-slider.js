@@ -2,6 +2,7 @@ import Swiper from './vendor/swiper';
 
 function initFeaturesSwiper() {
   let swiper = null;
+  let destroyed = false;
 
   function init() {
 
@@ -63,11 +64,13 @@ function initFeaturesSwiper() {
   init();
 
   function handleResize() {
-    if (window.innerWidth < 1200) {
+    if (window.innerWidth < 1200 && !destroyed) {
       swiper.destroy(true, true);
       swiper = null;
+      destroyed = true;
     }
     if (window.innerWidth >= 1200 && !swiper) {
+      destroyed = false;
       init();
     }
   }
