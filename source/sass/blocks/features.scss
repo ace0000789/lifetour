@@ -83,5 +83,9 @@
   justify-content: center;
   grid-template-columns: 37px 37px;
   gap: 4px;
+
+  @include vp-1200 {
+    display: none;
+  }
 }
 /**/

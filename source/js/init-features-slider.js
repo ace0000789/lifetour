@@ -47,6 +47,9 @@ function initFeaturesSwiper() {
         watchSlidesProgress: true,
         initialSlide: 3,
       },
+      1199: {
+        enabled: false,
+      },
     },
   });
   return myImageSlider;
