@@ -47,17 +47,6 @@ function initFeaturesSwiper() {
         watchSlidesProgress: true,
         initialSlide: 3,
       },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        watchSlidesProgress: true,
-      },
-
-      0: {
-        slidesPerView: 1,
-        watchSlidesProgress: true,
-        initialSlide: 2,
-      },
     },
   });
   return myImageSlider;
