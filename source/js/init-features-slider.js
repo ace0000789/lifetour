@@ -39,7 +39,7 @@ function initFeaturesSwiper() {
     effect: 'slide',
     breakpoints: {
       1200: {
-        slidesPerView: 3.585,
+        slidesPerView: 'auto',
         slidesPerGroup: 1,
         centeredSlides: true,
         allowTouchMove: true,
