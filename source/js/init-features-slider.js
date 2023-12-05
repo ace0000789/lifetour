@@ -26,7 +26,7 @@ function initFeaturesSwiper() {
     },
 
     // Автовысота картинки
-    autoHeight: false,
+    autoHeight: true,
     // Бесконечный слайдер
     loop: true,
     // Количнство дублирущих слайдов
