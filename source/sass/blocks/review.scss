@@ -138,6 +138,7 @@
   box-shadow: $slide-shadow;
   width: 700px;
   outline: none;
+  background-color: $color-default-white;
 
   @include vp-1200 {
     grid-template-columns: 186px 299px;
