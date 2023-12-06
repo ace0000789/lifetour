@@ -1,5 +1,6 @@
 .features {
   padding: 13px 0 45px;
+  position: relative;
 
   @include vp-1200 {
     padding: 68px 0 125.5px;
@@ -182,14 +183,30 @@
 /* BG */
 
 .features__background {
+  display: flex;
+  flex-direction: row;
+  gap: 103px;
+  width: 2091px;
+  margin: 0 auto;
+  position: absolute;
+  top: -125px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: brown;
+  z-index: -2;
+}
+
+.features__background-big {
+  display: block;
   width: 1200px;
   height: 401px;
-
-  img {
-    width: 1200px;
-    height: 401px;
-    object-fit: cover;
-  }
+  border: 1px solid red;
 }
+
+.features__background-small {
+  width: 788px;
+  height: 263px;
+  border: 1px solid red;
+}
+
 /**/
