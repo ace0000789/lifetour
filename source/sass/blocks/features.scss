@@ -45,7 +45,7 @@
   bottom: -2px;
   left: 50%;
   transform: translateX(-50%);
-  opacity: 0.03;
+  //opacity: 0.03;
 
   @include vp-767 {
     font-size: 26px;
@@ -189,7 +189,7 @@
   width: 2091px;
   margin: 0 auto;
   position: absolute;
-  top: -125px;
+  top: -142px;
   left: 50%;
   transform: translateX(-50%);
   background-color: brown;
@@ -201,12 +201,22 @@
   width: 1200px;
   height: 401px;
   border: 1px solid red;
+
+  img {
+    object-fit: cover;
+  }
 }
 
 .features__background-small {
   width: 788px;
   height: 263px;
   border: 1px solid red;
+
+  img {
+    width: 788px;
+    height: 263px;
+    object-fit: cover;
+  }
 }
 
 /**/
