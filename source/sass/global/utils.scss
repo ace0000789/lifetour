@@ -52,3 +52,7 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.swiper-notification {
+  display: none;
+}

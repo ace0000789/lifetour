@@ -65,6 +65,8 @@
 /* slider */
 .features .swiper-container {
   padding: 0 45px;
+  width: 100vw;
+  overflow: hidden;
 
   @include vp-767 {
     padding: 0 15px;
@@ -102,6 +104,7 @@
     width: 100%;
     padding: 29px 19px 29px;
     transform: none;
+    outline: none;
   }
 
   @include vp-767 {
@@ -252,3 +255,5 @@
     object-fit: cover;
   }
 }
+
+
