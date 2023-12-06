@@ -10,6 +10,7 @@ import {initStudySwiper} from './init-study-swiper';
 import {initReviewSwiper} from './init-review-swiper';
 import {initFeaturesSwiper} from './init-features-slider';
 import {controlLastELementFeatures} from './control-last-element-features';
+import {initGallerySwiper} from './init-gallery-swiper';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -32,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initReviewSwiper();
   initFeaturesSwiper();
   controlLastELementFeatures();
-
+  initGallerySwiper();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
