@@ -77,12 +77,15 @@
   top: 5px;
   left: 30px;
   opacity: 0.03;
+  max-height: 55px;
+  overflow: hidden;
 
   @include vp-1200 {
     top: 10px;
     font-size: 40px;
     font-weight: 800;
     line-height: 40px;
+    max-height: 40px;
   }
 
   @include vp-767 {
@@ -90,6 +93,7 @@
     left: 0;
     font-size: 26px;
     line-height: 26px;
+    max-height: 26px;
   }
 }
 
