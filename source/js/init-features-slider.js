@@ -53,7 +53,6 @@ function initFeaturesSwiper() {
             centeredSlides: true,
             allowTouchMove: true,
             spaceBetween: 30,
-            watchSlidesProgress: true,
             initialSlide: 3,
           },
         },
