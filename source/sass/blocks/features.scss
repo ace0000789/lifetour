@@ -178,3 +178,18 @@
     display: none;
   }
 }
+
+/* BG */
+
+.features__background {
+  background-color: brown;
+  width: 1200px;
+  height: 401px;
+
+  img {
+    width: 1200px;
+    height: 401px;
+    object-fit: cover;
+  }
+}
+/**/
