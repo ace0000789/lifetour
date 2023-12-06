@@ -99,6 +99,7 @@
   align-self: stretch;
   z-index: 3;
   background-color: $color-default-white;
+  outline: none;
 
   @include vp-1200 {
     width: 100%;
@@ -231,12 +232,15 @@
   width: 1200px;
   height: 401px;
 
-  @include vp-1200 {
-    margin-left: -107px;
-  }
-
   img {
     object-fit: cover;
+    width: 1200px;
+    height: 401px;
+
+  }
+
+  @include vp-1200 {
+    margin-left: -107px;
   }
 }
 
@@ -245,14 +249,14 @@
   height: 263px;
   align-self: flex-end;
 
-  @include vp-1200 {
-    margin-right: 107px;
-  }
-
   img {
     width: 788px;
     height: 263px;
     object-fit: cover;
+  }
+
+  @include vp-1200 {
+    margin-right: 107px;
   }
 }
 
