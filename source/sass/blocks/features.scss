@@ -196,14 +196,29 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: -2;
-  background-color: brown;
+
+  @include vp-1200 {
+    flex-direction: column;
+    top: 152px;
+    gap: 99px;
+    width: 1448px;
+    height: 763px;
+    justify-content: space-between;
+  }
+
+  @include vp-1023 {
+    top: 218px;
+  }
 }
 
 .features__background-big {
   display: block;
   width: 1200px;
   height: 401px;
-  //border: 1px solid red;
+
+  @include vp-1200 {
+    margin-left: -107px;
+  }
 
   img {
     object-fit: cover;
@@ -213,8 +228,11 @@
 .features__background-small {
   width: 788px;
   height: 263px;
-  //border: 1px solid red;
   align-self: flex-end;
+
+  @include vp-1200 {
+    margin-right: 107px;
+  }
 
   img {
     width: 788px;
