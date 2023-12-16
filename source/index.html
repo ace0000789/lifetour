@@ -24,7 +24,7 @@
   <div class="wrapper" data-validate="wrapper">
     <main>
       <h1 class="visually-hidden">Сайт Lifetour.</h1>
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <h2 class="visually-hidden">Топ туры.</h2>
         <div class="container container--hero">
           <header class="hero-header is-closed is-nojs" data-validate="header">
@@ -211,7 +211,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-      <section class="tours" id="tours">
+      <section class="tours" id="tours" data-test="tours">
         <div class="container">
           <div class="tours-slider swiper-container" data-validate="swiper-tours">
             <div class="tours-slider__intro">
@@ -497,174 +497,177 @@
           </a>
         </div>
       </section>
-      <section class="study" id="study">
-        <div class="container container--study">
-          <div class="study__intro">
-            <span class="study__title-shadow">Обучение</span>
-            <h2 class="study__title">Обучение</h2>
-            <p class="study__text">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки
-              пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
-          </div>
-          <div class="study-slider swiper-container" data-validate="swiper-study">
-            <div class="study-slider__intro">
-              <h3 class="study-slider__title">Наши инструкторы</h3>
-              <div class="study-slider__control">
-                <div class="swiper-button-prev" data-validate="study-button-prev">
-                  <svg width="15" height="13" role="img" aria-label="Cтрелка.">
-                    <use href="img/sprite.svg#slider-arrow"></use>
-                  </svg>
-                  <span class="visually-hidden">Cтрелка влево.</span>
-                </div>
-                <div class="swiper-button-next" data-validate="study-button-next">
-                  <svg width="15" height="13" role="img" aria-label="Cтрелка.">
-                    <use href="img/sprite.svg#slider-arrow"></use>
-                  </svg>
-                  <span class="visually-hidden">Cтрелка вправо.</span>
-                </div>
-              </div>
+      <div data-test="training">
+        <section class="study" id="study">
+          <div class="container container--study">
+            <div class="study__intro">
+              <span class="study__title-shadow">Обучение</span>
+              <h2 class="study__title">Обучение</h2>
+              <p class="study__text">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых
+                десятки
+                пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
             </div>
-            <div class="swiper-wrapper">
-              <div class="swiper-slide" tabindex="0">
-                <picture>
-                  <source type="image/webp" srcset="img/study/aleksandr.webp">
-                  <img src="img/study/aleksandr.jpg" width="255" height="200" alt="Фото тренера Александра.">
-                </picture>
-                <div class="study-slider__profile">
-                  <h4 class="study-slider__name">Александр<br>Прокофьев</h4>
-                  <a class="study-slider__link" href="#">
-                    <span class="visually-hidden">Перейти в VK.</span>
-                    <svg width="14" height="8" role="img" aria-label="Символ vk.">
-                      <use href="img/sprite.svg#vk"></use>
+            <div class="study-slider swiper-container" data-validate="swiper-study">
+              <div class="study-slider__intro">
+                <h3 class="study-slider__title">Наши инструкторы</h3>
+                <div class="study-slider__control">
+                  <div class="swiper-button-prev" data-validate="study-button-prev">
+                    <svg width="15" height="13" role="img" aria-label="Cтрелка.">
+                      <use href="img/sprite.svg#slider-arrow"></use>
                     </svg>
-                  </a>
-                </div>
-                <p class="study-slider__text">Строгий и внимательный инструктор, весёлый и&nbsp;общительный человек.
-                  Любит
-                  природу.</p>
-              </div>
-              <div class="swiper-slide" tabindex="0">
-                <picture>
-                  <source type="image/webp" srcset="img/study/svetlana.webp">
-                  <img src="img/study/svetlana.jpg" width="255" height="200" alt="Фото тренера Светланы.">
-                </picture>
-                <div class="study-slider__profile">
-                  <h4 class="study-slider__name">Светлана<br>Афиногенова</h4>
-                  <a class="study-slider__link" href="#">
-                    <span class="visually-hidden">Перейти в VK.</span>
-                    <svg width="14" height="8" role="img" aria-label="Символ vk.">
-                      <use href="img/sprite.svg#vk"></use>
+                    <span class="visually-hidden">Cтрелка влево.</span>
+                  </div>
+                  <div class="swiper-button-next" data-validate="study-button-next">
+                    <svg width="15" height="13" role="img" aria-label="Cтрелка.">
+                      <use href="img/sprite.svg#slider-arrow"></use>
                     </svg>
-                  </a>
+                    <span class="visually-hidden">Cтрелка вправо.</span>
+                  </div>
                 </div>
-                <p class="study-slider__text">Видеть мир вокруг, познавать его&nbsp;опасности, находить друг друга,
-                  становиться ближе, чувствовать — в&nbsp;этом назначение жизни.</p>
               </div>
-              <div class="swiper-slide" tabindex="0">
-                <picture>
-                  <source type="image/webp" srcset="img/study/nadezhda.webp">
-                  <img src="img/study/nadezhda.jpg" width="255" height="200" alt="Фото тренера Надежды.">
-                </picture>
-                <div class="study-slider__profile">
-                  <h4 class="study-slider__name">Надежда<br>Колесниченко</h4>
-                  <a class="study-slider__link" href="#">
-                    <span class="visually-hidden">Перейти в VK.</span>
-                    <svg width="14" height="8" role="img" aria-label="Символ vk.">
-                      <use href="img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/study/aleksandr.webp">
+                    <img src="img/study/aleksandr.jpg" width="255" height="200" alt="Фото тренера Александра.">
+                  </picture>
+                  <div class="study-slider__profile">
+                    <h4 class="study-slider__name">Александр<br>Прокофьев</h4>
+                    <a class="study-slider__link" href="#">
+                      <span class="visually-hidden">Перейти в VK.</span>
+                      <svg width="14" height="8" role="img" aria-label="Символ vk.">
+                        <use href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="study-slider__text">Строгий и внимательный инструктор, весёлый и&nbsp;общительный человек.
+                    Любит
+                    природу.</p>
                 </div>
-                <p class="study-slider__text">Участники говорят, что&nbsp;Надежда ответственная, приятная в
-                  общении,<br>и в поездках с&nbsp;ней&nbsp;чувствуешь себя спокойно и уверенно.</p>
-              </div>
-              <div class="swiper-slide" tabindex="0">
-                <picture>
-                  <source type="image/webp" srcset="img/study/fedor.webp">
-                  <img src="img/study/fedor.jpg" width="255" height="200" alt="Фото тренера Фёдора.">
-                </picture>
-                <div class="study-slider__profile">
-                  <h4 class="study-slider__name">Федор<br>Кайгородов</h4>
-                  <a class="study-slider__link" href="#">
-                    <span class="visually-hidden">Перейти в VK.</span>
-                    <svg width="14" height="8" role="img" aria-label="Символ vk.">
-                      <use href="img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
+                <div class="swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/study/svetlana.webp">
+                    <img src="img/study/svetlana.jpg" width="255" height="200" alt="Фото тренера Светланы.">
+                  </picture>
+                  <div class="study-slider__profile">
+                    <h4 class="study-slider__name">Светлана<br>Афиногенова</h4>
+                    <a class="study-slider__link" href="#">
+                      <span class="visually-hidden">Перейти в VK.</span>
+                      <svg width="14" height="8" role="img" aria-label="Символ vk.">
+                        <use href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="study-slider__text">Видеть мир вокруг, познавать его&nbsp;опасности, находить друг друга,
+                    становиться ближе, чувствовать — в&nbsp;этом назначение жизни.</p>
                 </div>
-                <p class="study-slider__text">Опыт походов: Ходит в походы<br>с 2001 года. В России побывал в горных
-                  районах Хибины, Архыз, много путешествует по Европе.</p>
-              </div>
-              <div class="swiper-slide" tabindex="0">
-                <picture>
-                  <source type="image/webp" srcset="img/study/svetlana.webp 1x">
-                  <img src="img/study/svetlana.jpg" width="255" height="200" alt="Фото тренера Светланы.">
-                </picture>
-                <div class="study-slider__profile">
-                  <h4 class="study-slider__name">Светлана<br>Афиногенова</h4>
-                  <a class="study-slider__link" href="#">
-                    <span class="visually-hidden">Перейти в VK.</span>
-                    <svg width="14" height="8" role="img" aria-label="Символ vk.">
-                      <use href="img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
+                <div class="swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/study/nadezhda.webp">
+                    <img src="img/study/nadezhda.jpg" width="255" height="200" alt="Фото тренера Надежды.">
+                  </picture>
+                  <div class="study-slider__profile">
+                    <h4 class="study-slider__name">Надежда<br>Колесниченко</h4>
+                    <a class="study-slider__link" href="#">
+                      <span class="visually-hidden">Перейти в VK.</span>
+                      <svg width="14" height="8" role="img" aria-label="Символ vk.">
+                        <use href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="study-slider__text">Участники говорят, что&nbsp;Надежда ответственная, приятная в
+                    общении,<br>и в поездках с&nbsp;ней&nbsp;чувствуешь себя спокойно и уверенно.</p>
                 </div>
-                <p class="study-slider__text">Видеть мир вокруг, познавать его&nbsp;опасности, находить друг друга,
-                  становиться ближе, чувствовать — в&nbsp;этом назначение жизни.</p>
+                <div class="swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/study/fedor.webp">
+                    <img src="img/study/fedor.jpg" width="255" height="200" alt="Фото тренера Фёдора.">
+                  </picture>
+                  <div class="study-slider__profile">
+                    <h4 class="study-slider__name">Федор<br>Кайгородов</h4>
+                    <a class="study-slider__link" href="#">
+                      <span class="visually-hidden">Перейти в VK.</span>
+                      <svg width="14" height="8" role="img" aria-label="Символ vk.">
+                        <use href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="study-slider__text">Опыт походов: Ходит в походы<br>с 2001 года. В России побывал в горных
+                    районах Хибины, Архыз, много путешествует по Европе.</p>
+                </div>
+                <div class="swiper-slide" tabindex="0">
+                  <picture>
+                    <source type="image/webp" srcset="img/study/svetlana.webp 1x">
+                    <img src="img/study/svetlana.jpg" width="255" height="200" alt="Фото тренера Светланы.">
+                  </picture>
+                  <div class="study-slider__profile">
+                    <h4 class="study-slider__name">Светлана<br>Афиногенова</h4>
+                    <a class="study-slider__link" href="#">
+                      <span class="visually-hidden">Перейти в VK.</span>
+                      <svg width="14" height="8" role="img" aria-label="Символ vk.">
+                        <use href="img/sprite.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="study-slider__text">Видеть мир вокруг, познавать его&nbsp;опасности, находить друг друга,
+                    становиться ближе, чувствовать — в&nbsp;этом назначение жизни.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="learning">
-        <h2 class="learning__title">Процесс обучения</h2>
-        <div class="learning__list">
-          <div class="learning__item">
-            <div class="learning__img">
-              <span class="visually-hidden">Изображение Карты.</span>
-              <svg width="25" height="25" role="img" aria-label="Изображение Карты.">
-                <use href="img/sprite.svg#map"></use>
-              </svg>
+        </section>
+        <section class="learning">
+          <h2 class="learning__title">Процесс обучения</h2>
+          <div class="learning__list">
+            <div class="learning__item">
+              <div class="learning__img">
+                <span class="visually-hidden">Изображение Карты.</span>
+                <svg width="25" height="25" role="img" aria-label="Изображение Карты.">
+                  <use href="img/sprite.svg#map"></use>
+                </svg>
+              </div>
+              <p class="learning__text">Изучение спортивного туристского&nbsp;движения</p>
             </div>
-            <p class="learning__text">Изучение спортивного туристского&nbsp;движения</p>
-          </div>
-          <div class="learning__item learning__item--shoes">
-            <div class="learning__img">
-              <span class="visually-hidden">Изображение Башмака.</span>
-              <svg width="25" height="25" role="img" aria-label="Изображение Башмака.">
-                <use href="img/sprite.svg#shoes"></use>
-              </svg>
+            <div class="learning__item learning__item--shoes">
+              <div class="learning__img">
+                <span class="visually-hidden">Изображение Башмака.</span>
+                <svg width="25" height="25" role="img" aria-label="Изображение Башмака.">
+                  <use href="img/sprite.svg#shoes"></use>
+                </svg>
+              </div>
+              <p class="learning__text">Подготовка и&nbsp;техническое снаряжение в походах</p>
             </div>
-            <p class="learning__text">Подготовка и&nbsp;техническое снаряжение в походах</p>
-          </div>
-          <div class="learning__item learning__item--empty">
-          </div>
-          <div class="learning__item learning__item--tree">
-            <div class="learning__img">
-              <span class="visually-hidden">Изображение Ëлки.</span>
-              <svg width="25" height="25" role="img" aria-label="Изображение Ëлки.">
-                <use href="img/sprite.svg#tree"></use>
-              </svg>
+            <div class="learning__item learning__item--empty">
             </div>
-            <p class="learning__text">Лекции по&nbsp;окружающей среде, экологии и гигиене</p>
-          </div>
-          <div class="learning__item learning__item--mount">
-            <div class="learning__img">
-              <span class="visually-hidden">Изображение Гор</span>
-              <svg width="25" height="25" role="img" aria-label="Изображение Гор.">
-                <use href="img/sprite.svg#mount"></use>
-              </svg>
+            <div class="learning__item learning__item--tree">
+              <div class="learning__img">
+                <span class="visually-hidden">Изображение Ëлки.</span>
+                <svg width="25" height="25" role="img" aria-label="Изображение Ëлки.">
+                  <use href="img/sprite.svg#tree"></use>
+                </svg>
+              </div>
+              <p class="learning__text">Лекции по&nbsp;окружающей среде, экологии и гигиене</p>
             </div>
-            <p class="learning__text">Разъяснение сложности горных препятствий</p>
+            <div class="learning__item learning__item--mount">
+              <div class="learning__img">
+                <span class="visually-hidden">Изображение Гор</span>
+                <svg width="25" height="25" role="img" aria-label="Изображение Гор.">
+                  <use href="img/sprite.svg#mount"></use>
+                </svg>
+              </div>
+              <p class="learning__text">Разъяснение сложности горных препятствий</p>
+            </div>
           </div>
-        </div>
-        <div class="learning__background">
-          <picture>
-            <source type="image/webp"
-              srcset="img/background/clouds-bad-day.webp 1x, img/background/clouds-bad-day@2x.webp 2x">
-            <img src="img/background/clouds-bad-day.png" width="840" height="280"
-              srcset="img/background/clouds-bad-day@2x.png 2x" alt="">
-          </picture>
-        </div>
-      </section>
+          <div class="learning__background">
+            <picture>
+              <source type="image/webp"
+                srcset="img/background/clouds-bad-day.webp 1x, img/background/clouds-bad-day@2x.webp 2x">
+              <img src="img/background/clouds-bad-day.png" width="840" height="280"
+                srcset="img/background/clouds-bad-day@2x.png 2x" alt="">
+            </picture>
+          </div>
+        </section>
+      </div>
       <div class="background">
         <picture>
           <source type="image/webp" media="(max-width: 767px)" srcset="img/background/clouds-mobile.webp 1x,
@@ -676,7 +679,7 @@
             alt="">
         </picture>
       </div>
-      <section class="about" id="about">
+      <section class="about" id="about" data-test="about">
         <div class="about__img">
           <picture>
             <source type="image/webp" media="(max-width: 767px)" srcset="img/about/lake-mobile.webp 1x,
@@ -717,7 +720,7 @@
           </div>
         </div>
       </section>
-      <section class="review" id="review">
+      <section class="review" id="review" data-test="reviews">
         <div class="container container--review">
           <div class="swiper-container" data-validate="swiper-review">
             <div class="review__intro">
@@ -819,7 +822,7 @@
           </div>
         </div>
       </section>
-      <section class="features">
+      <section class="features" data-test="adv">
         <div class="features__title-wrap">
           <h2 class="features__title">Преимущества</h2>
           <span class="features__title-shadow">Преимущества</span>
@@ -975,8 +978,8 @@
               <picture>
                 <source type="image/webp"
                   srcset="img/gallery/desktop/mount.webp 1x, img/gallery/desktop/mount@2x.webp 2x">
-                <img src="img/gallery/desktop/mount.jpg" width="" height=""
-                  srcset="img/gallery/desktop/mount@2x.jpg 2x" alt="Фото туриста в горах.">
+                <img src="img/gallery/desktop/mount.jpg" width="" height="" srcset="img/gallery/desktop/mount@2x.jpg 2x"
+                  alt="Фото туриста в горах.">
               </picture>
             </div>
 
@@ -1003,8 +1006,8 @@
               <picture>
                 <source type="image/webp"
                   srcset="img/gallery/desktop/tibet.webp 1x, img/gallery/desktop/tibet@2x.webp 2x">
-                <img src="img/gallery/desktop/tibet.jpg" width="" height=""
-                  srcset="img/gallery/desktop/tibet@2x.jpg 2x" alt="Фото гор Тибета.">
+                <img src="img/gallery/desktop/tibet.jpg" width="" height="" srcset="img/gallery/desktop/tibet@2x.jpg 2x"
+                  alt="Фото гор Тибета.">
               </picture>
             </div>
 
