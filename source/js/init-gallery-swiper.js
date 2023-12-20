@@ -39,20 +39,20 @@ function initGallerySwiper() {
     effect: 'slide',
     breakpoints: {
       1200: {
-        slidesPerView: 5,
-        slidesPerGroup: 2,
+        slidesPerView: 2.5,
+        slidesPerGroup: 1,
         centeredSlides: false,
         allowTouchMove: true,
         spaceBetween: 5,
         initialSlide: 0,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 1.5,
         spaceBetween: 5,
       },
 
       0: {
-        slidesPerView: 2,
+        slidesPerView: 1,
       },
     },
   });
