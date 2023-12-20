@@ -522,15 +522,17 @@
 .hero-slider__video .hero-slider__video-button:disabled:active {
   background-color: transparent;
 }
-/*
+
 .hero-slider__video iframe {
-  width: 100%;
-  height: 100%;
+  width: 385px;
+  height: 215px;
   background-color: $color-default-black;
+  border: none;
 }
 
 .hero-slider__media.hero-slider__media--music iframe {
-  width: 340px;
-  height: 100%;
+  width: 385px;
+  height: 215px;
+  border: none;
 }
-*/
+
