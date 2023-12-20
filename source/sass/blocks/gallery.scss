@@ -92,11 +92,10 @@
 
 /* slider */
 .gallery .swiper-container {
-
   overflow: hidden;
 }
 
-.gallery .swiper-wrapper {
+.gallery .swiper-container .swiper-wrapper {
   height: 450px;
   display: grid;
   grid-auto-flow: column;
@@ -107,49 +106,29 @@
 }
 
 .gallery .swiper-slide {
-  width: 39.79%;
   height: 450px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 275px 298px;
   gap: 5px;
   outline: none;
 
   img {
     width: 100%;
     object-fit: cover;
-    border-radius: 10px;
     height: 100%;
-  }
-
-  @include vp-767 {
-    height: 275px;
   }
 }
 
 .gallery__slide-big-image {
+  width: 275px;
   height: 450px;
-
-  @include vp-767 {
-    height: 275px;
-  }
+  width: auto;
 }
 
 .gallery__slide-half {
+  width: 298px;
   display: grid;
-  grid-template-rows: 220px 220px;
+  grid-template-rows: 179px 265px;
   gap: 5px;
-
-  @include vp-767 {
-    grid-template-rows: 135px 135px;
-  }
-}
-
-.gallery__slide-third {
-  display: grid;
-  grid-template-rows: 145px 145px 145px;
-  gap: 5px;
-
-  @include vp-767 {
-    grid-template-rows: 88.33px 88.33px 88.33px;
-  }
 }
