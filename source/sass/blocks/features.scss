@@ -273,3 +273,11 @@
     margin-right: 107px;
   }
 }
+
+.features__br {
+  display: none;
+
+  @include vp-767 {
+    display: block;
+  }
+}
