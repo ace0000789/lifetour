@@ -39,7 +39,7 @@ function initGallerySwiper() {
     effect: 'slide',
     breakpoints: {
       1200: {
-        slidesPerView: 2.5,
+        slidesPerView: 'auto',
         slidesPerGroup: 1,
         centeredSlides: false,
         allowTouchMove: true,

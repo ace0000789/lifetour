@@ -113,6 +113,22 @@
   gap: 5px;
   outline: none;
 
+  &--start-mount {
+    grid-template-columns: 272px 298px;
+  }
+
+  &--start-fish {
+    grid-template-columns: 276px 275px;
+  }
+
+  &--start-fire {
+    grid-template-columns: 298px 272px;
+  }
+
+  &--start-ice {
+    grid-template-columns: 298px 276px;
+  }
+
   img {
     width: 100%;
     object-fit: cover;
