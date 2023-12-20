@@ -1,7 +1,7 @@
 export function initMobileMunu() {
-  let header = document.querySelector('[data-validate="header"]');
-  let headerToggle = document.querySelector('[data-validate="toggle"]');
-  let wrapper = document.querySelector('[data-validate="wrapper"]');
+  const header = document.querySelector('[data-validate="header"]');
+  const headerToggle = document.querySelector('[data-validate="toggle"]');
+  const wrapper = document.querySelector('[data-validate="wrapper"]');
   const html = document.querySelector('[data-validate="html"]');
 
   if (!header || !headerToggle || !wrapper) {

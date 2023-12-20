@@ -1,5 +1,5 @@
-let header = document.querySelector('[data-validate="header"]');
-let wrapper = document.querySelector('[data-validate="wrapper"]');
+const header = document.querySelector('[data-validate="header"]');
+const wrapper = document.querySelector('[data-validate="wrapper"]');
 const headerLinks = document.querySelectorAll('[data-validate="header__link"]');
 const html = document.querySelector('[data-validate="html"]');
 
@@ -23,8 +23,8 @@ function handleLinkClick(e) {
   e.preventDefault();
 
   closeMenuAfterClick();
-  let link = e.currentTarget;
-  let href = link.getAttribute('href');
+  const link = e.currentTarget;
+  const href = link.getAttribute('href');
 
   location.href = href;
 }

@@ -1,5 +1,5 @@
-let header = document.querySelector('[data-validate="header"]');
-let wrapper = document.querySelector('[data-validate="wrapper"]');
+const header = document.querySelector('[data-validate="header"]');
+const wrapper = document.querySelector('[data-validate="wrapper"]');
 const html = document.querySelector('[data-validate="html"]');
 
 export function checkScreenSize() {
