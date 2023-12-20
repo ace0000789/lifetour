@@ -1,15 +1,16 @@
 .about {
-  padding: 53px 0 56px;
+  padding: 83px 0 77px;
   position: relative;
 
   @include vp-1200 {
-    padding: 9px 0 0;
+    padding: 0;
     min-height: 541px;
   }
 
   @include vp-767 {
     padding: 0;
     min-height: none;
+    padding-bottom: 10px;
   }
 }
 
@@ -136,7 +137,7 @@
 
 .about__img {
   position: absolute;
-  top: 30px;
+  top: 56px;
   left: 0;
   height: 474px;
   width: 808px;
