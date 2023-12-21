@@ -53,6 +53,7 @@ function initGallerySwiper() {
 
       0: {
         slidesPerView: 1,
+        spaceBetween: 15,
       },
     },
   });
