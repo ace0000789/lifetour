@@ -75,14 +75,15 @@
 /* Пагинация */
 
 .hero-slider .swiper-pagination {
-  width: 100%;
-  bottom: 41px;
+  width: 1200px;
+  left: 50%;
+  transform: translateX(-49.7%);
+  bottom: 87px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
   z-index: 1;
-  padding-right: 75px;
 
   @include vp-1200 {
     padding-right: 0;
