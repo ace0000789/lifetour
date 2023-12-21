@@ -149,11 +149,19 @@
     object-fit: cover;
     height: 100%;
   }
+
+  @include vp-1200 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .gallery__slide-big-image {
   height: 450px;
   width: auto;
+
+  @include vp-1200 {
+    width: 100%;
+  }
 }
 
 .gallery__slide-half {
