@@ -1,9 +1,11 @@
 .gallery {
   padding-bottom: 40px;
   background-color: $color-default-white;
+  padding-bottom: 5px;
 
   @include vp-1200 {
     padding-top: 1px;
+    padding-bottom: 0;
   }
 
   @include vp-767 {
@@ -19,10 +21,12 @@
 
   @include vp-1200 {
     margin-bottom: 21px;
+    grid-template-columns: auto 71px;
   }
 
   @include vp-767 {
     margin-bottom: 14px;
+    grid-template-columns: auto 78px;
   }
 }
 
@@ -109,7 +113,7 @@
   margin-bottom: 7px;
 
   @include vp-1200 {
-    margin-bottom: 7px;
+    margin-bottom: 0;
   }
 }
 
@@ -117,6 +121,10 @@
 .gallery .swiper-container {
   overflow: hidden;
   padding-top: 23px;
+
+  @include vp-1023 {
+    padding-top: 17px;
+  }
 }
 
 .gallery .swiper-container .swiper-wrapper {
