@@ -51,11 +51,11 @@
 .swiper-button-prev svg,
 .swiper-button-next svg {
   fill: $color-default-white;
-  transform: translate(60%, 45%);
+  transform: translate(0, 10%);
 }
 
 .swiper-button-next svg {
-  transform: rotate(180deg) translate(-60%, -45%);
+  transform: rotate(180deg) translate(0, -10%);
 }
 
 /* style for swiper btn disabled */
