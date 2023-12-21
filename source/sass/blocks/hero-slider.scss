@@ -75,72 +75,101 @@
 /* Пагинация */
 
 .hero-slider .swiper-pagination {
-  left: 50%;
-  transform: translateX(-49.7%);
-  width: 1200px;
-  bottom: 97px;
+  width: 100%;
+  bottom: 41px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 20px;
   z-index: 1;
-  padding-right: 4px;
+  padding-right: 75px;
 
   @include vp-1200 {
     padding-right: 0;
-    transform: translateX(-50%);
-    width: auto;
+    bottom: 60px;
     justify-content: center;
-    bottom: 40px;
   }
-}
-
-.hero-slider .swiper-pagination .swiper-pagination-bullet {
-  margin: 0;
-}
-
-.hero-slider .swiper-pagination-bullet {
-  margin: 0;
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  line-height: 10px;
-  font-size: 14px;
-  border: 1px solid $color-default-white;
-  opacity: 1;
-  background-color: transparent;
 
   @include vp-767 {
-    width: 8px;
-    height: 8px;
+    bottom: 15px;
+    justify-content: center;
+  }
+}
+
+/* bullet */
+.hero-slider .swiper-pagination .swiper-pagination-bullet {
+  width: 30px;
+  height: 20px;
+  border: none;
+  position: relative;
+  background-color: transparent;
+  opacity: 1;
+  margin: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 1px solid red;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: $trans-default;
   }
 
+  /* bullet hover */
   @include hover {
-    background-color: #d9d9d9;
+    &::after {
+      background-color: red;
+      transition: $trans-default;
+    }
   }
 
+  /* bullet focus */
   @include focus {
-    outline: 1px solid rgba(255, 255, 255, 0.5);
-    outline-offset: 1px;
+    outline: none;
+
+    &::after {
+      background-color: transparent;
+      outline: 1px solid rgba(255, 255, 255, 0.5);
+      outline-offset: 1px;
+      transition: none;
+    }
   }
 }
 
 .hero-slider .swiper-pagination .swiper-pagination-bullet:active:not(.swiper-pagination-bullet-active) {
-  background-color: rgba(255, 255, 255, 0.5);
-  outline: none;
+  &::after {
+    background-color: rgba(255, 255, 255, 0.5);
+    outline: none;
+    transition: $trans-default;
+  }
 }
 
-.hero-slider .swiper-pagination-bullet-active {
-  background-color: $color-default-white;
+.hero-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: transparent;
   outline: none;
 
+  &::after {
+    background-color: $color-default-white;
+    transition: $trans-default;
+  }
+
   @include focus {
-    outline: none;
+    &::after {
+      background-color: $color-default-white;
+      outline: none;
+      transition: $trans-default;
+    }
   }
 
   @include hover {
-    background-color: $color-default-white;
+    &::after {
+      background-color: $color-default-white;
+      transition: $trans-default;
+    }
   }
 }
 
