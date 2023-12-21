@@ -149,6 +149,7 @@
   height: 449px;
   display: grid;
   grid-auto-flow: column;
+  padding: 0;
 
   @include vp-1200 {
     height: 450px;
