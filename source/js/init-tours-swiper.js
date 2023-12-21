@@ -45,7 +45,7 @@ function initToursSwiper() {
         allowTouchMove: true,
         spaceBetween: 30,
       },
-      768: {
+      672: {
         slidesPerView: 2,
         spaceBetween: 18,
       },

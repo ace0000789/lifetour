@@ -49,6 +49,14 @@ function initReviewSwiper() {
         slidesPerView: 'auto',
         spaceBetween: 30,
       },
+      600: {
+        slidesPerView: 1.8,
+        spaceBetween: 30,
+      },
+      400: {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+      },
 
       0: {
         slidesPerView: 1,
