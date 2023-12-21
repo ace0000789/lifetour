@@ -149,7 +149,14 @@
   }
 }
 
+.study .swiper-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
 .study .swiper-container .swiper-slide {
+  margin: 0;
+  padding: 0;
   border: 1px solid rgba(2, 102, 193, 0.1);
   outline: none;
   padding: 14px;
@@ -168,7 +175,7 @@
 
 
 .study .swiper-slide img {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   object-fit: cover;
   height: 200px;
   width: 100%;
