@@ -27,6 +27,16 @@
   }
 }
 
+.swiper-button-prev--gallery,
+.swiper-button-next--gallery {
+  @include vp-1200 {
+    width: 34px;
+  }
+
+  @include vp-767 {
+    width: 37px;
+  }
+}
 
 .wrapper .swiper-button-prev:active,
 .wrapper .swiper-button-next:active {
