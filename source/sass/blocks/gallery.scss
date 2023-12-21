@@ -1,5 +1,4 @@
 .gallery {
-  padding-bottom: 40px;
   background-color: $color-default-white;
   padding-bottom: 3px;
 
@@ -150,9 +149,11 @@
   display: grid;
   grid-auto-flow: column;
   padding: 0;
+  margin-bottom: 0;
 
   @include vp-1200 {
     height: 450px;
+    margin-bottom: 0;
   }
 
   @include vp-767 {
