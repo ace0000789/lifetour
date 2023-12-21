@@ -92,8 +92,9 @@
   }
 
   @include vp-767 {
-    bottom: 15px;
+    bottom: 38px;
     justify-content: center;
+    gap: 18px;
   }
 }
 
@@ -118,6 +119,16 @@
     left: 50%;
     transform: translateX(-50%);
     transition: $trans-default;
+  }
+
+  @include vp-767 {
+    width: 10px;
+    height: 10px;
+
+    &::after {
+      width: 8px;
+      height: 8px;
+    }
   }
 
   /* bullet hover */
@@ -148,6 +159,16 @@
   &::after {
     left: 5px;
   }
+
+  @include vp-767 {
+    width: 10px;
+    height: 10px;
+
+    &::after {
+      width: 8px;
+      height: 8px;
+    }
+  }
 }
 
 .hero-slider .swiper-pagination .swiper-pagination-bullet:last-child {
@@ -155,6 +176,17 @@
 
   &::after {
     left: 15px;
+  }
+
+  @include vp-767 {
+    width: 10px;
+    height: 10px;
+
+    &::after {
+      left: 5px;
+      width: 8px;
+      height: 8px;
+    }
   }
 }
 
