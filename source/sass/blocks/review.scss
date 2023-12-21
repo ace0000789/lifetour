@@ -127,6 +127,7 @@
 }
 
 .review .swiper-wrapper {
+  margin: 0;
   padding: 0 10px 10px 10px;
 
   @include vp-1200 {
@@ -135,6 +136,7 @@
 }
 
 .review .swiper-wrapper .swiper-slide {
+  margin: 0;
   display: grid;
   grid-template-columns: 258px 352px;
   gap: 30px;
