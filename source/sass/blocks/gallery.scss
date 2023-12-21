@@ -169,4 +169,9 @@
   display: grid;
   grid-template-rows: 179px 265px;
   gap: 5px;
+
+  @include vp-1200 {
+    width: auto;
+    grid-template-rows: 180px 265px;
+  }
 }
