@@ -23,3 +23,10 @@
     outline: none;
   }
 }
+
+.wrapper .btn:active {
+  background-color: $color-resolution-blue;
+  color: $color-default-white;
+  border: 1px solid $color-resolution-blue;
+}
+/**/
