@@ -177,7 +177,8 @@
 
 
 .form__wrapper label.is-invalid input::placeholder {
-  color: $color-torch-red;
+  color: $color-default-black;
+  opacity: 0.5;
 }
 
 
