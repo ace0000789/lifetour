@@ -19,7 +19,7 @@
     position: absolute;
     object-fit: cover;
     z-index: -1;
-    background-color: $gainsboro;
+    background-color: $color-gainsboro;
   }
 }
 
@@ -101,10 +101,6 @@
   position: relative;
 }
 
-.form__wrapper label.is-invalid input::placeholder {
-  color: $color-default-black;
-}
-
 .form__wrapper input {
   margin: 0;
   width: 100%;
@@ -171,6 +167,20 @@
   color: $color-navy-blue;
   opacity: 0.5;
 }
+
+
+
+.form__wrapper label.is-invalid input {
+  border: 1px solid $color-torch-red;
+}
+
+
+
+.form__wrapper label.is-invalid input::placeholder {
+  color: $color-torch-red;
+}
+
+
 
 .form .form__button {
   padding-top: 18px;

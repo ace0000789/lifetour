@@ -139,7 +139,7 @@
   /* bullet hover */
   @include hover {
     &::after {
-      background-color: $gainsboro;
+      background-color: $color-gainsboro;
       transition: $trans-default;
     }
   }
