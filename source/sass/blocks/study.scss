@@ -162,6 +162,7 @@
   background-color: $color-default-white;
   align-self: stretch;
   overflow: auto;
+  user-select: none;
 }
 
 .study .swiper-slide {

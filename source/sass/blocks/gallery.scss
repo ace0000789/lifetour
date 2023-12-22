@@ -163,6 +163,7 @@
 }
 
 .gallery .swiper-slide {
+  user-select: none;
   height: 449px;
   width: 100%;
   display: grid;
