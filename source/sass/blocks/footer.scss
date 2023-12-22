@@ -8,7 +8,7 @@
   flex-direction: column;
   gap: 30px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     gap: 27px;
   }
 }
@@ -18,7 +18,7 @@
   grid-template-columns: 190px 760px 250px;
   justify-content: left;
 
-  @include vp-1439 {
+  @include vp-1200 {
     grid-template-columns: 190px auto;
     gap: 30px;
   }
@@ -50,13 +50,13 @@
   outline: none;
 
   svg {
-    fill: $color-chocolate;
+    fill: $color-default-black
   }
 }
 
 .footer__logo-link svg {
   display: block;
-  fill: $color-default-brown;
+  fill: $color-default-black;
 }
 
 .footer__list {
@@ -70,7 +70,7 @@
   justify-content: left;
   margin-top: 2px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     margin-top: 0;
     row-gap: 12px;
   }
@@ -90,11 +90,11 @@
   text-align: right;
 
   @include hover-focus {
-    color: $color-chocolate;
+    color: $color-resolution-blue;
     outline: none;
   }
 
-  @include vp-1439 {
+  @include vp-1200 {
     display: none;
   }
 }
@@ -138,11 +138,11 @@
       left: 50%;
       transform: translateX(-50%);
       height: 1px;
-      background-color: $color-default-brown;
+      background-color: $color-default-black;
     }
   }
 
-  @include vp-1439 {
+  @include vp-1200 {
     font-size: 14px;
     line-height: 21px;
   }
@@ -178,7 +178,7 @@
   gap: 15px;
   max-width: 480px;
 
-  @include vp-1439 {
+  @include vp-1200 {
     margin-bottom: 3px;
   }
 
@@ -204,15 +204,15 @@
   width: 100%;
   height: 100%;
   border-radius: 5px;
-  border: 1px solid $color-light-gray;
+  border: 1px solid $color-border-social;
 
   svg {
-    fill: $color-default-brown
+    fill: $color-default-black;
   }
 
   @include hover-focus {
     outline: none;
-    border: 1px solid $color-default-brown;
+    border: 1px solid $color-default-black;
   }
 }
 
@@ -223,16 +223,16 @@
 /* for disabled add class footer__social-link--disabled */
 
 .footer__social-link.footer__social-link--disabled {
-  border: 1px solid $color-light-gray;
+  border: 1px solid $color-border-social;
   background-color: transparent;
   pointer-events: none;
 
   svg {
-    fill: $color-light-gray
+    fill: $color-border-social;
   }
 
   @include hover-focus {
-    border: 1px solid $color-light-gray;
+    border: 1px solid $color-border-social;
   }
 }
 
@@ -260,7 +260,7 @@
       height: 1px;
       bottom: -2px;
       left: 0;
-      background-color: $color-default-brown;
+      background-color: $color-default-black;
     }
   }
 }
