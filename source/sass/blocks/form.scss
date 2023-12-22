@@ -123,22 +123,15 @@
     border: 1px solid $color-navy-blue;
   }
 
-  &:hover:not(:disabled)::placeholder {
-    color: $color-navy-blue;
-  }
-
   &:active:not(:disabled),
   &:focus:not(:disabled) {
     border: 1px solid $color-resolution-blue;
     outline: none;
+    color: $color-default-black;
   }
 
   &:disabled {
     border: 1px solid $border-features;
-  }
-
-  @include vp-767 {
-    height: 57px;
   }
 }
 
@@ -155,22 +148,31 @@
   }
 }
 
-.form__wrapper input:focus::placeholder,
-.form__wrapper input:active::placeholder {
-  color: $color-nobel;
+.form__wrapper input:hover:not(:disabled)::placeholder {
+  color: $color-navy-blue;
 }
 
+.form__wrapper input:focus::placeholder,
+.form__wrapper input:active::placeholder {
+  color: $color-default-white;
+}
+
+.form__wrapper input:focus:hover::placeholder,
+.form__wrapper input:active:hover::placeholder {
+  color: $color-default-white;
+}
+/*
 .form__wrapper input:disabled::placeholder {
   color: $color-navy-blue;
   opacity: 0.5;
 }
-
+*//*
 .form__wrapper input:focus:disabled::placeholder,
 .form__wrapper input:active:disabled::placeholder {
   color: $color-navy-blue;
   opacity: 0.5;
 }
-
+*/
 .form .form__button {
   padding-top: 18px;
   padding-bottom: 18px;
