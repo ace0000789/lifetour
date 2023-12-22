@@ -1330,9 +1330,19 @@
             </div>
             <div class="contacts__map">
               <span class="visually-hidden">Мы на карте.</span>
-              <iframe
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A52800e1482f77f9a0fe7b62f2ab7d52d935b603f34de3ff3c84acd92aaf0eabb&amp;source=constructor"
-                loading="lazy" title="Music Track" width="563" height="366" frameborder="0"></iframe>
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/contacts/map-mobile.webp 1x, img/contacts/map-mobile@2x.webp 2x">
+                <source type="image/jpg" media="(max-width: 767px)"
+                  srcset="img/contacts/map-mobile.jpg 1x, img/contacts/map-mobile@2x.jpg 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="img/contacts/map-tablet.webp 1x, img/contacts/map-tablet@2x.webp 2x">
+                <source type="image/jpg" media="(max-width: 1199px)"
+                  srcset="img/contacts/map-tablet.jpg 1x, img/contacts/map-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/contacts/map-desktop.webp 1x, img/contacts/map-desktop@2x.webp 2x">
+                <img src="img/contacts/map-desktop.jpg" width="585" height="324"
+                  srcset="img/contacts/map-desktop@2x.jpg 2x" alt="Мы на карте.">
+              </picture>
             </div>
           </div>
         </div>
