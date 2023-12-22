@@ -9,7 +9,7 @@ function initPromoSwiper() {
       el: '.swiper-pagination',
       clickable: true,
       renderBullet(index, className) {
-        return '<button class="' + className + '" type="button"><span class="visually-hidden">bullet.</span></button>';
+        return `<button class="${className}" type="button"><span class="visually-hidden">bullet.</span></button>`;
       },
     },
 
