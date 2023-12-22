@@ -115,8 +115,15 @@
   }
 }
 
-/* Slide */
+/* Slider */
+.tours-slider .swiper-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
 .tours-slider .swiper-slide {
+  margin: 0;
+  padding: 0;
   height: 416px;
   background-color: $color-navy-blue;
   outline: none;
