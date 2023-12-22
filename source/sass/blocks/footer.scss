@@ -1,0 +1,273 @@
+.footer {
+  padding: 30px 0 30px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+
+  @include vp-1439 {
+    gap: 27px;
+  }
+}
+
+.footer__subwrapper {
+  display: grid;
+  grid-template-columns: 190px 760px 250px;
+  justify-content: left;
+
+  @include vp-1439 {
+    grid-template-columns: 190px auto;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.footer__logo-link {
+  user-select: none;
+  vertical-align: bottom;
+
+  @include hover {
+    svg {
+      fill: $color-nobel;
+    }
+  }
+
+  @include vp-767 {
+    width: 190px;
+    margin: 0 auto;
+  }
+}
+
+.footer__wrapper .footer__logo-link:active {
+  outline: none;
+
+  svg {
+    fill: $color-chocolate;
+  }
+}
+
+.footer__logo-link svg {
+  display: block;
+  fill: $color-default-brown;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  grid-template-columns: repeat(6, auto);
+  gap: 20.5px;
+  justify-content: left;
+  margin-top: 2px;
+
+  @include vp-1439 {
+    margin-top: 0;
+    row-gap: 12px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    justify-content: center;
+    row-gap: 25.5px;
+    column-gap: 20.5px;
+  }
+}
+
+.footer__phone {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: right;
+
+  @include hover-focus {
+    color: $color-chocolate;
+    outline: none;
+  }
+
+  @include vp-1439 {
+    display: none;
+  }
+}
+
+.footer__wrapper .footer__phone:active {
+  color: #adff2f;
+}
+
+/* for disabled add class footer__phone--disabled*/
+
+.footer__phone--disabled {
+  color: $color-nobel;
+  pointer-events: none;
+
+  @include hover-focus {
+    color: $color-nobel;
+    pointer-events: none;
+  }
+}
+
+.footer__item {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__link {
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+
+  @include hover-focus {
+    outline: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      background-color: $color-default-brown;
+    }
+  }
+
+  @include vp-1439 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.footer__item .footer__link:active {
+  &::after {
+    display: none;
+  }
+}
+
+/* for disabled add class .footer__link--disabled */
+
+.footer__link.footer__link--disabled {
+  color: rgba(81, 56, 51, 0.5);
+  pointer-events: none;
+
+  &::after {
+    display: none;
+  }
+}
+
+
+/* social list */
+
+.footer__social-list {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 480px;
+
+  @include vp-1439 {
+    margin-bottom: 3px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 4px;
+    max-width: 250px;
+    justify-content: center;
+  }
+}
+
+.footer__social-item {
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 1px solid $color-light-gray;
+
+  svg {
+    fill: $color-default-brown
+  }
+
+  @include hover-focus {
+    outline: none;
+    border: 1px solid $color-default-brown;
+  }
+}
+
+.footer__social-list .footer__social-link:active {
+  background-color: #adff2f;
+}
+
+/* for disabled add class footer__social-link--disabled */
+
+.footer__social-link.footer__social-link--disabled {
+  border: 1px solid $color-light-gray;
+  background-color: transparent;
+  pointer-events: none;
+
+  svg {
+    fill: $color-light-gray
+  }
+
+  @include hover-focus {
+    border: 1px solid $color-light-gray;
+  }
+}
+
+.footer__link-rules {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 5px;
+  text-align: center;
+  position: relative;
+
+  @include vp-767 {
+    max-width: 100%;
+  }
+
+  @include hover-focus {
+    outline: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      bottom: -2px;
+      left: 0;
+      background-color: $color-default-brown;
+    }
+  }
+}
+
+.footer__wrapper .footer__link-rules:active {
+  &::after {
+    display: none;
+  }
+}
+/**/
