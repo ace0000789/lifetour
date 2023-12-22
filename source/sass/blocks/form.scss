@@ -161,18 +161,17 @@
 .form__wrapper input:active:hover::placeholder {
   color: $color-default-white;
 }
-/*
+
 .form__wrapper input:disabled::placeholder {
   color: $color-navy-blue;
   opacity: 0.5;
 }
-*//*
-.form__wrapper input:focus:disabled::placeholder,
-.form__wrapper input:active:disabled::placeholder {
+
+.form__wrapper input:disabled:active::placeholder {
   color: $color-navy-blue;
   opacity: 0.5;
 }
-*/
+
 .form .form__button {
   padding-top: 18px;
   padding-bottom: 18px;
