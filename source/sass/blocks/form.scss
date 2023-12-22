@@ -4,7 +4,7 @@
   min-height: 760px;
 
   @include vp-1200 {
-    padding: 50px 0 120px;
+    min-height: 680px;
   }
 
   @include vp-767 {
@@ -30,6 +30,12 @@
   text-align: center;
   align-items: center;
 
+  @include vp-1200 {
+    min-height: 600px;
+    align-items: center;
+    padding-top: 2px;
+  }
+
   form {
     display: flex;
     flex-direction: column;
@@ -38,10 +44,17 @@
     padding-top: 4px;
 
     @include vp-1200 {
+      gap: 24px;
+      padding-top: 0;
     }
 
     @include vp-767 {
     }
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
   }
 
   h3 {
@@ -53,9 +66,9 @@
     line-height: 35px;
 
     @include vp-1200 {
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 28px;
+      font-size: 25px;
+      font-weight: 800;
+      line-height: 25px;
     }
 
     @include vp-767 {
@@ -74,6 +87,8 @@
     padding-left: 2px;
 
     @include vp-1200 {
+      max-width: 300px;
+      padding-left: 0;
     }
 
     @include vp-767 {
@@ -88,12 +103,23 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 18px;
+
+  @include vp-1200 {
+    gap: 29px;
+    padding-right: 2px;
+  }
 }
 
 .form__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 360px) 180px;
   gap: 30px;
+
+  @include vp-1200 {
+    grid-template-columns: 271px;
+    gap: 11px;
+    justify-content: center;
+  }
 }
 
 .form__wrapper label {
@@ -114,6 +140,10 @@
   color: $color-nobel;
   user-select: none;
   padding: 19px 15px 19px 30px;
+
+  @include vp-1200 {
+    height: 50px;
+  }
 
   &:hover:not(:disabled) {
     border: 1px solid $color-navy-blue;
@@ -190,8 +220,8 @@
   width: 190px;
 
   @include vp-1200 {
-    padding-top: 22px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     display: block;
     width: 100%;
     max-width: 100%;
