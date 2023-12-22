@@ -1242,6 +1242,46 @@
           </ul>
         </div>
       </section>
+      <section class="form">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/form/vegetables-mobile.webp 1x, img/form/vegetables-mobile@2x.webp 2x">
+          <source type="image/jpg" media="(max-width: 767px)"
+            srcset="img/form/vegetables-mobile.jpg 1x, img/form/vegetables-mobile@2x.jpg 2x">
+          <source type="image/webp" media="(max-width: 1199px)"
+            srcset="img/form/vegetables-tablet.webp 1x, img/form/vegetables-tablet@2x.webp 2x">
+          <source type="image/jpg" media="(max-width: 1199px)"
+            srcset="img/form/vegetables-tablet.jpg 1x, img/form/vegetables-tablet@2x.jpg 2x">
+          <source type="image/webp"
+            srcset="img/form/vegetables-desktop.webp 1x, img/form/vegetables-desktop@2x.webp 2x">
+          <img src="img/form/vegetables-desktop.jpg" width="1440" height="760"
+            srcset="img/form/vegetables-desktop@2x.jpg 2x" alt="Изображение леса.">
+        </picture>
+        <div class="form__container" data-form-validate data-callback="base">
+          <form action="http://echo.htmlacademy.ru" method="post">
+            <h3 class="form__title">Задать вопрос</h3>
+            <p class="form__text">Заполните форму и наш оператор свяжется с&nbsp;вами для&nbsp;консультации.</p>
+            <div class="form__wrapper">
+              <label data-validate-type="text" data-limitation="name" data-message-extra="Более одной буквы"
+                data-on-input-validate data-required>
+                <input type="text" name="name" placeholder="Как к вам обращаться?" aria-label="Как к вам обращаться?"
+                  required>
+                <span class="visually-hidden">Поле для заполнения имя.</span>
+              </label>
+              <label data-validate-type="phone" data-on-input-validate data-required>
+                <input type="text" name="phone" required aria-label="Телефон" placeholder="Телефон">
+                <span class="visually-hidden">Поле для заполнения телефона.</span>
+              </label>
+              <label data-validate-type="email" data-on-input-validate data-required>
+                <input type="text" name="email" required aria-label="Email" placeholder="Email">
+                <span class="visually-hidden">Поле для заполнения email.</span>
+              </label>
+              <button class="btn btn--white form__button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+
+      </section>
 
     </main>
     <footer class="footer"></footer>
