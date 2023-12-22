@@ -34,7 +34,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 38px;
+    padding-top: 4px;
 
     @include vp-1200 {
     }
@@ -70,6 +71,7 @@
     font-size: 16px;
     line-height: 24px;
     max-width: 980px;
+    padding-left: 2px;
 
     @include vp-1200 {
     }
@@ -85,7 +87,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 18px;
 }
 
 .form__wrapper {
