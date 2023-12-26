@@ -2,7 +2,7 @@
   padding: 88px 0 39px;
 
   @include vp-1200 {
-    padding: 90px 0 39px;
+    padding: 58px 0 39px;
   }
 
   @include vp-767 {
@@ -25,6 +25,10 @@
 .contacts__title-wrapper {
   position: relative;
   margin-bottom: 23px;
+
+  @include vp-1200 {
+    margin-bottom: 18px;
+  }
 }
 
 .contacts__title {
@@ -35,9 +39,8 @@
   line-height: 35px;
 
   @include vp-1200 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
+    font-size: 25px;
+    line-height: 25px;
   }
 
   @include vp-767 {
@@ -54,6 +57,11 @@
   bottom: -3px;
   left: 0;
   opacity: 0.03;
+
+  @include vp-1200 {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .contacts__text-wrapper {
@@ -69,6 +77,8 @@
 
     @include vp-1200 {
       margin-bottom: 30px;
+      max-width: 480px;
+      margin-bottom: 40px;
     }
 
     @include vp-767 {
