@@ -139,29 +139,29 @@
 
 .contacts__link {
   @include hover {
-    color: #ff0000;
+    color: $color-resolution-blue;
 
     svg {
-      stroke: #ff0000;
+      stroke: $color-resolution-blue;
     }
   }
 
   @include focus {
-    color: #adff2f;
+    color: $color-resolution-blue;
     outline: none;
 
     svg {
-      stroke: #adff2f;
+      stroke: $color-resolution-blue;
     }
   }
 }
 
 .contacts .contacts__link:active {
-  color: #0000ff;
+  color: $color-navy-blue;
   outline: none;
 
   svg {
-    stroke: #0000ff;
+    stroke: $color-navy-blue;
   }
 }
 
