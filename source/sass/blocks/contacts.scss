@@ -94,7 +94,6 @@
     margin-bottom: 50px;
 
     @include vp-1200 {
-      margin-bottom: 30px;
       max-width: 480px;
       margin-bottom: 40px;
     }
@@ -192,7 +191,7 @@
 
   @include vp-1200 {
     font-size: 16px;
-    line-height: 16px
+    line-height: 16px;
   }
 
   @include vp-767 {
