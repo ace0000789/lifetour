@@ -68,6 +68,7 @@
   grid-template-columns: repeat(6, auto);
   gap: 20.5px;
   justify-content: center;
+  align-items: center;
   margin-left: 40px;
 
   @include vp-1200 {
@@ -99,17 +100,17 @@
 }
 
 .footer__wrapper .footer__phone:active {
-  color: #adff2f;
+  color: $color-navy-blue;
 }
 
 /* for disabled add class footer__phone--disabled*/
 
 .footer__phone--disabled {
-  color: $color-nobel;
+  color: $color-navy-blue;
   pointer-events: none;
 
   @include hover-focus {
-    color: $color-nobel;
+    color: $color-navy-blue;
     pointer-events: none;
   }
 }
