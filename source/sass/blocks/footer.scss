@@ -16,7 +16,7 @@
 .footer__subwrapper {
   display: grid;
   grid-template-columns: 200px 760px 200px;
-  justify-content: left;
+  justify-content: space-between;
 
   @include vp-1200 {
     grid-template-columns: 190px auto;
@@ -69,9 +69,10 @@
   gap: 20.5px;
   justify-content: center;
   align-items: center;
-  margin-left: 40px;
+  margin-top: 2px;
 
   @include vp-1200 {
+    margin-top: 0;
     row-gap: 12px;
   }
 
@@ -87,7 +88,10 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 4px;
 
   @include hover-focus {
     color: $color-resolution-blue;
