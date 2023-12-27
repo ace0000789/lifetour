@@ -2,8 +2,9 @@
 const baseSuccessCallback = (event) => {
   event.preventDefault();
   // В данном колбеке бэкендер, либо разработчик при необходимости будет писать запрос на отправку формы на сервер и обрабатывать возможные ошибки или успешную отправку формы на сервер
+  const form = document.querySelector('[data-form-feedback]');
   const url = 'https://echo.htmlacademy.ru/';
-  const formData = new FormData(document.querySelector('.form form'));
+  const formData = new FormData(form);
 
   fetch(url, {
     method: 'POST',
