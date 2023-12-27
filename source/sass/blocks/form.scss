@@ -255,6 +255,7 @@
   padding-bottom: 18px;
   display: block;
   width: 190px;
+  word-break: break-all;
 
   @include vp-1200 {
     padding-top: 18px;
