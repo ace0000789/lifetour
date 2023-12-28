@@ -88,7 +88,7 @@ export class Form {
     phoneParents.forEach((item) => this._initPhoneInput(item));
 
     const callback = parent.dataset.callback;
-    form.noValidate = false;
+    form.noValidate = true;
 
     form.addEventListener('submit', (event) => {
       event.preventDefault();
