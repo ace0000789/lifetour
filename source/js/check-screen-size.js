@@ -4,7 +4,6 @@ const html = document.querySelector('[data-validate="html"]');
 
 export function checkScreenSize() {
 
-
   if (!header || !wrapper) {
     return;
   }
