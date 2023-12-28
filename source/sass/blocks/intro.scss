@@ -6,3 +6,9 @@
 .intro__img-wrapper svg {
   fill: $color-default-white;
 }
+
+.intro__link {
+  color: $color-default-black;
+  text-decoration: none;
+  user-select: none;
+}
