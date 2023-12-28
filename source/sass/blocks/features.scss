@@ -100,7 +100,7 @@
 
 .features .swiper-slide {
   width: 380px;
-  padding: 39px 19px 39px;
+  padding: 39px 19px;
   border: 1px solid rgba(2, 102, 193, 0.1);
   align-self: stretch;
   z-index: 3;
@@ -110,13 +110,13 @@
 
   @include vp-1200 {
     width: 100%;
-    padding: 29px 19px 29px;
+    padding: 29px 19px;
     transform: none;
     outline: none;
   }
 
   @include vp-767 {
-    padding: 19px 10px 19px;
+    padding: 19px 10px;
   }
 }
 
