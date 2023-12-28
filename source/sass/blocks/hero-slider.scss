@@ -6,6 +6,8 @@
   height: 908px;
   width: 100%;
   object-fit: cover;
+  display: block;
+
 
   @include vp-1580 {
     height: 800px;
@@ -42,6 +44,7 @@
 }
 
 .hero-slider .swiper-slide {
+  display: block;
   margin: 0;
   padding: 0;
   width: 100%;
