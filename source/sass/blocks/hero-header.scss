@@ -105,7 +105,6 @@
   position: relative;
   padding: 3px 5px;
   text-decoration: none;
-  user-select: none;
 
   @include vp-1200 {
     color: $color-default-black;
