@@ -201,6 +201,10 @@
 }
 
 .contacts__link {
+  color: $color-default-black;
+  user-select: none;
+  text-decoration: none;
+
   @include hover {
     color: $color-resolution-blue;
 

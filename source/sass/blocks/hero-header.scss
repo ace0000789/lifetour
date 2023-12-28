@@ -36,6 +36,7 @@
   padding: 9px;
   padding-left: 32px;
   padding-right: 31px;
+  text-decoration: none;
 
   @include vp-1200 {
     width: 144px;
@@ -103,6 +104,8 @@
   user-select: none;
   position: relative;
   padding: 3px 5px;
+  text-decoration: none;
+  user-select: none;
 
   @include vp-1200 {
     color: $color-default-black;
@@ -168,10 +171,11 @@
   font-weight: 600;
   line-height: 18px;
   color: $color-default-white;
-  user-select: none;
   justify-content: end;
   padding-top: 4px;
   max-width: 150px;
+  text-decoration: none;
+  user-select: none;
 
   @include vp-1200 {
     max-width: 100%;

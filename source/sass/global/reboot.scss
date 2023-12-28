@@ -20,7 +20,6 @@ html {
   font-family: $ff-placeholder;
   color: $color-default-black;
   scroll-behavior: smooth;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -31,12 +30,6 @@ body {
   height: 100%;
   min-width: 320px;
   background-color: $color-default-white;
-}
-
-a {
-  color: $color-default-black;
-  text-decoration: none;
-  user-select: none;
 }
 
 img {

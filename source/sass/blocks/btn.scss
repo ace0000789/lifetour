@@ -8,6 +8,7 @@
   transition: opacity $trans-default;
   max-width: 180px;
   user-select: none;
+  text-decoration: none;
 
   &:disabled {
     background-color: $color-nobel;

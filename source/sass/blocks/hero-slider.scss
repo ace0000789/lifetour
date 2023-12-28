@@ -537,6 +537,8 @@
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
+  text-decoration: none;
+  user-select: none;
 
   @include hover-focus {
     border: 1px solid $color-resolution-blue;
