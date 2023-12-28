@@ -522,6 +522,10 @@
 
 .hero-slider__video {
   height: 317px;
+
+  @include vp-1200 {
+    height: 300px;
+  }
 }
 
 /* кнопка */
