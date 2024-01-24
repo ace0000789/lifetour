@@ -482,6 +482,11 @@
       margin-bottom: 0;
       top: 0;
       max-height: 365px;
+
+      img {
+        max-height: 365px;
+        height: 365px;
+      }
     }
   }
 
